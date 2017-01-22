@@ -12,6 +12,7 @@
 		44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BD17D01E344A3A00CF805A /* Main.storyboard */; };
 		44BD17D41E344A3A00CF805A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BD17D31E344A3A00CF805A /* Assets.xcassets */; };
 		44BD17D71E344A3A00CF805A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BD17D51E344A3A00CF805A /* LaunchScreen.storyboard */; };
+		48E4578F1E3453740096D19F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E4578E1E3453740096D19F /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		44BD17D31E344A3A00CF805A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44BD17D61E344A3A00CF805A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44BD17D81E344A3A00CF805A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E4578E1E3453740096D19F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../Downloads/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
+				48E4578E1E3453740096D19F /* logo.png */,
 				44BD17D31E344A3A00CF805A /* Assets.xcassets */,
 				44BD17D51E344A3A00CF805A /* LaunchScreen.storyboard */,
 				44BD17D81E344A3A00CF805A /* Info.plist */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E4578F1E3453740096D19F /* logo.png in Resources */,
 				44BD17D71E344A3A00CF805A /* LaunchScreen.storyboard in Resources */,
 				44BD17D41E344A3A00CF805A /* Assets.xcassets in Resources */,
 				44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */,
@@ -299,6 +303,7 @@
 				44BD17DD1E344A3A00CF805A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
