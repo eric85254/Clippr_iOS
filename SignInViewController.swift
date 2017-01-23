@@ -33,7 +33,28 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.userNameField.resignFirstResponder()
         return true;
     }
-
+    
+     func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func attemptSignIn(_ sender: Any) {
+        let username = userNameField.text!
+        let password = passwordField.text!
+        
+        var booleanValue : Bool? = false
+        
+        // call verifying function to change booleanValue's value
+        
+        if let booleanValue = booleanValue, booleanValue {
+         // if it passes
+        }
+        else {
+            // if it fails
+        }
+        
+        
+    }
     /*
     // MARK: - Navigation
 

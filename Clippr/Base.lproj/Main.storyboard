@@ -43,6 +43,9 @@
                                 <state key="normal" title="Sign-In">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="attemptSignIn:" destination="l30-fY-oTN" eventType="touchUpInside" id="mvT-Ge-CdL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
