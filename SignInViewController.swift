@@ -8,13 +8,15 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.passwordField.delegate = self
+        self.userNameField.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -26,7 +28,11 @@ class SignInViewController: UIViewController {
         self.signIn.layer.borderColor = UIColor.blue.cgColor
         
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.passwordField.resignFirstResponder()
+        self.userNameField.resignFirstResponder()
+        return true;
+    }
 
     /*
     // MARK: - Navigation
