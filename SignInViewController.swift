@@ -118,8 +118,34 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         task.resume()
     }
 
+    func makePostCall()
+    {
+        let json: [String: Any] = ["username": "ThomasCarpaneto95", "password": "1234"]
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        
+        // create post request
+        let url = URL(string: "https://628970c7.ngrok.io/api/user_login")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        // insert json data to the request
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)
+            }
+        }
+        
+        task.resume()    }
     
     @IBAction func attemptLogin(_ sender: Any) {
-        makeGetCall()
+        makePostCall()
     }
 }
