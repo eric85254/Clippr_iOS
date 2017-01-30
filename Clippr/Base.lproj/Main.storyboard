@@ -44,6 +44,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="attemptLogin:" destination="l30-fY-oTN" eventType="touchUpInside" id="QJp-nQ-iQ7"/>
                                     <action selector="attemptSignIn:" destination="l30-fY-oTN" eventType="touchUpInside" id="mvT-Ge-CdL"/>
                                 </connections>
                             </button>
