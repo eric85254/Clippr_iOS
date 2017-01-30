@@ -95,11 +95,19 @@
                                 <rect key="frame" x="57" y="28" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot your password? click here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o95-hd-B6c">
+                                <rect key="frame" x="90" y="573" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="clipprLogo" destination="lC2-lO-hxo" id="8Yr-MH-So2"/>
+                        <outlet property="passwordRecovery" destination="o95-hd-B6c" id="NB1-3G-MrN"/>
                         <outlet property="signIn" destination="OOK-2j-iPO" id="fxo-bu-f4y"/>
                         <outlet property="signUP" destination="Stn-Q3-qse" id="ZeQ-ee-cTw"/>
                     </connections>
