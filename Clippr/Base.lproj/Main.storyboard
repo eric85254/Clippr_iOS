@@ -25,13 +25,13 @@
                     <toolbarItems>
                         <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="SZI-gM-pMZ"/>
                         <barButtonItem image="settings_btn" id="ct6-h0-6AF"/>
-                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="dZ3-QV-3GP"/>
+                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="dZ3-QV-3GP"/>
                         <barButtonItem title="Item" id="Tdo-S9-LlW"/>
-                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="4ok-35-J6v"/>
-                        <barButtonItem title="Item" id="Big-td-5pT"/>
-                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="KcP-tY-BWw"/>
-                        <barButtonItem title="Item" id="rIe-N5-q40"/>
-                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="9xf-AP-ief"/>
+                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="4ok-35-J6v"/>
+                        <barButtonItem image="language_icon" id="Big-td-5pT"/>
+                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="KcP-tY-BWw"/>
+                        <barButtonItem image="add_photo_btn" id="rIe-N5-q40"/>
+                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="9xf-AP-ief"/>
                         <barButtonItem title="Item" id="cAx-mY-lOB"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Pq5-ea-dDD"/>
                     </toolbarItems>
@@ -259,7 +259,9 @@
     </scenes>
     <resources>
         <image name="Clipprlogo.png" width="1662" height="1536"/>
-        <image name="calendar_icon.png" width="15" height="15"/>
+        <image name="add_photo_btn" width="20" height="19"/>
+        <image name="language_icon" width="15" height="15"/>
+        <image name="menubutton" width="15" height="17"/>
         <image name="settings_btn" width="17" height="17"/>
     </resources>
 </document>
