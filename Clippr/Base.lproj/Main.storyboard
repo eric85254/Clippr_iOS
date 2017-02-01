@@ -24,7 +24,11 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Item" id="Big-td-5pT"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="SZI-gM-pMZ"/>
+                        <barButtonItem title="Item" id="rIe-N5-q40"/>
+                        <barButtonItem title="Item" id="Tdo-S9-LlW"/>
+                        <barButtonItem title="Item" id="cAx-mY-lOB"/>
+                        <barButtonItem title="Item" id="ct6-h0-6AF"/>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="SZI-gM-pMZ"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
