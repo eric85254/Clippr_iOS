@@ -23,12 +23,17 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="Big-td-5pT"/>
-                        <barButtonItem title="Item" id="rIe-N5-q40"/>
-                        <barButtonItem title="Item" id="Tdo-S9-LlW"/>
-                        <barButtonItem title="Item" id="cAx-mY-lOB"/>
-                        <barButtonItem title="Item" id="ct6-h0-6AF"/>
                         <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="SZI-gM-pMZ"/>
+                        <barButtonItem title="Item" id="ct6-h0-6AF"/>
+                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="dZ3-QV-3GP"/>
+                        <barButtonItem title="Item" id="Tdo-S9-LlW"/>
+                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="4ok-35-J6v"/>
+                        <barButtonItem title="Item" id="Big-td-5pT"/>
+                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="KcP-tY-BWw"/>
+                        <barButtonItem title="Item" id="rIe-N5-q40"/>
+                        <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="9xf-AP-ief"/>
+                        <barButtonItem title="Item" id="cAx-mY-lOB"/>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Pq5-ea-dDD"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
