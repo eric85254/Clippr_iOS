@@ -24,7 +24,7 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="SZI-gM-pMZ"/>
-                        <barButtonItem title="Item" id="ct6-h0-6AF"/>
+                        <barButtonItem image="settings_btn" id="ct6-h0-6AF"/>
                         <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="dZ3-QV-3GP"/>
                         <barButtonItem title="Item" id="Tdo-S9-LlW"/>
                         <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="4ok-35-J6v"/>
@@ -261,5 +261,6 @@
     <resources>
         <image name="Clipprlogo.png" width="1662" height="1536"/>
         <image name="calendar_icon.png" width="15" height="15"/>
+        <image name="settings_btn" width="17" height="17"/>
     </resources>
 </document>
