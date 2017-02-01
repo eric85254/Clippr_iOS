@@ -113,7 +113,7 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="ifL-CA-aDO"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="H3F-vv-B1J"/>
-                        <barButtonItem title="Item" id="1iU-dW-DMJ"/>
+                        <barButtonItem image="calendar_icon.png" id="1iU-dW-DMJ"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -255,5 +255,6 @@
     </scenes>
     <resources>
         <image name="Clipprlogo.png" width="1662" height="1536"/>
+        <image name="calendar_icon.png" width="15" height="15"/>
     </resources>
 </document>
