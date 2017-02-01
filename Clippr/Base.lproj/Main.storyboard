@@ -116,9 +116,8 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="ifL-CA-aDO"/>
+                        <barButtonItem image="menubutton" id="ifL-CA-aDO"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="H3F-vv-B1J"/>
-                        <barButtonItem image="calendar_icon.png" id="1iU-dW-DMJ"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
