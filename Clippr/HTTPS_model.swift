@@ -15,7 +15,7 @@ class HTTPS_model
     
     
     
-    func makePostCallLogin(username: String, password: String)
+    func makePostCallLogin(username: String, password: String) -> Bool
     {
         
             let json: [String: Any] = ["username":username,"password":password]
@@ -42,5 +42,6 @@ class HTTPS_model
             }
             
             task.resume()
+        return true
         }
     }
