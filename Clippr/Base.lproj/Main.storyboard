@@ -32,7 +32,7 @@
                         <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="KcP-tY-BWw"/>
                         <barButtonItem image="add_photo_btn" id="rIe-N5-q40"/>
                         <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="9xf-AP-ief"/>
-                        <barButtonItem title="Item" id="cAx-mY-lOB"/>
+                        <barButtonItem image="star_icon_filled" id="cAx-mY-lOB"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Pq5-ea-dDD"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -263,5 +263,6 @@
         <image name="language_icon" width="15" height="15"/>
         <image name="menubutton" width="15" height="17"/>
         <image name="settings_btn" width="17" height="17"/>
+        <image name="star_icon_filled" width="34" height="32"/>
     </resources>
 </document>
