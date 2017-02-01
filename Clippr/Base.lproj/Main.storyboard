@@ -111,7 +111,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem image="onestar_filled" id="ifL-CA-aDO"/>
+                        <barButtonItem image="starfilled" id="ifL-CA-aDO"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="H3F-vv-B1J"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -254,6 +254,6 @@
     </scenes>
     <resources>
         <image name="Clipprlogo.png" width="1662" height="1536"/>
-        <image name="onestar_filled" width="16" height="15"/>
+        <image name="starfilled" width="37" height="35"/>
     </resources>
 </document>
