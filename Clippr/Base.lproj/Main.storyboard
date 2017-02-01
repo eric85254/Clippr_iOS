@@ -116,7 +116,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem image="onestar_filled" id="ifL-CA-aDO"/>
+                        <barButtonItem image="starfilled" id="ifL-CA-aDO"/>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="H3F-vv-B1J"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
