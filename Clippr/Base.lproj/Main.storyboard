@@ -76,6 +76,14 @@
                                     <segue destination="ZII-rE-LqH" kind="show" id="tJL-Jg-Def"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3n-nA-6xy">
+                                <rect key="frame" x="187" y="592" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="1AE-xT-vt1" kind="show" id="qwq-Tc-P7I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
@@ -88,6 +96,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZER-q3-uWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="207" y="682"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1kn-aY-xsC">
+            <objects>
+                <viewController id="1AE-xT-vt1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EGf-gr-nvH"/>
+                        <viewControllerLayoutGuide type="bottom" id="p4m-SC-fbG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Cb-Bx-7et">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="ifL-CA-aDO"/>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="H3F-vv-B1J"/>
+                        <barButtonItem title="Item" id="1iU-dW-DMJ"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdT-b9-6V8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="1430"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

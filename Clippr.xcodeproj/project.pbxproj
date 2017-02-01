@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445CB5751E416FE600583F1E /* calendar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 445CB5721E416FE600583F1E /* calendar_icon.png */; };
+		445CB5761E416FE600583F1E /* calendar_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445CB5731E416FE600583F1E /* calendar_icon@2x.png */; };
+		445CB5771E416FE600583F1E /* calendar_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445CB5741E416FE600583F1E /* calendar_icon@3x.png */; };
+		445CB57B1E41701700583F1E /* onestar_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 445CB5781E41701700583F1E /* onestar_filled.png */; };
+		445CB57C1E41701700583F1E /* onestar_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445CB5791E41701700583F1E /* onestar_filled@2x.png */; };
+		445CB57D1E41701700583F1E /* onestar_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445CB57A1E41701700583F1E /* onestar_filled@3x.png */; };
 		44BD17CD1E344A3A00CF805A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD17CC1E344A3A00CF805A /* AppDelegate.swift */; };
 		44BD17CF1E344A3A00CF805A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD17CE1E344A3A00CF805A /* ViewController.swift */; };
 		44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BD17D01E344A3A00CF805A /* Main.storyboard */; };
@@ -20,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		445CB5721E416FE600583F1E /* calendar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_icon.png; path = ../../calendar_icon.png; sourceTree = "<group>"; };
+		445CB5731E416FE600583F1E /* calendar_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar_icon@2x.png"; path = "../../calendar_icon@2x.png"; sourceTree = "<group>"; };
+		445CB5741E416FE600583F1E /* calendar_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar_icon@3x.png"; path = "../../calendar_icon@3x.png"; sourceTree = "<group>"; };
+		445CB5781E41701700583F1E /* onestar_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onestar_filled.png; path = ../../onestar_filled.png; sourceTree = "<group>"; };
+		445CB5791E41701700583F1E /* onestar_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onestar_filled@2x.png"; path = "../../onestar_filled@2x.png"; sourceTree = "<group>"; };
+		445CB57A1E41701700583F1E /* onestar_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "onestar_filled@3x.png"; path = "../../onestar_filled@3x.png"; sourceTree = "<group>"; };
 		44BD17C91E344A3A00CF805A /* Clippr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clippr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BD17CC1E344A3A00CF805A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BD17CE1E344A3A00CF805A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +79,12 @@
 		44BD17CB1E344A3A00CF805A /* Clippr */ = {
 			isa = PBXGroup;
 			children = (
+				445CB5781E41701700583F1E /* onestar_filled.png */,
+				445CB5791E41701700583F1E /* onestar_filled@2x.png */,
+				445CB57A1E41701700583F1E /* onestar_filled@3x.png */,
+				445CB5721E416FE600583F1E /* calendar_icon.png */,
+				445CB5731E416FE600583F1E /* calendar_icon@2x.png */,
+				445CB5741E416FE600583F1E /* calendar_icon@3x.png */,
 				48E4579B1E345E240096D19F /* Clipprlogo.png */,
 				48E457991E345DE10096D19F /* Images */,
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
@@ -140,8 +158,14 @@
 			files = (
 				48E4579A1E345DE10096D19F /* Images in Resources */,
 				44BD17D71E344A3A00CF805A /* LaunchScreen.storyboard in Resources */,
+				445CB5751E416FE600583F1E /* calendar_icon.png in Resources */,
+				445CB5761E416FE600583F1E /* calendar_icon@2x.png in Resources */,
+				445CB5771E416FE600583F1E /* calendar_icon@3x.png in Resources */,
+				445CB57D1E41701700583F1E /* onestar_filled@3x.png in Resources */,
 				44BD17D41E344A3A00CF805A /* Assets.xcassets in Resources */,
 				44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */,
+				445CB57C1E41701700583F1E /* onestar_filled@2x.png in Resources */,
+				445CB57B1E41701700583F1E /* onestar_filled.png in Resources */,
 				48E4579C1E345E240096D19F /* Clipprlogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
