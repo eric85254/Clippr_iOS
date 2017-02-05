@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stylist Dash View Controller-->
         <scene sceneID="rbZ-r7-uo0">
             <objects>
-                <viewController id="ZII-rE-LqH" sceneMemberID="viewController">
+                <viewController id="ZII-rE-LqH" customClass="StylistDashViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tPX-z5-Znl"/>
                         <viewControllerLayoutGuide type="bottom" id="SX7-7g-SDc"/>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="207" y="682"/>
         </scene>
-        <!--View Controller-->
+        <!--Client Dash View Controller-->
         <scene sceneID="1kn-aY-xsC">
             <objects>
-                <viewController id="1AE-xT-vt1" sceneMemberID="viewController">
+                <viewController id="1AE-xT-vt1" customClass="ClientDashViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EGf-gr-nvH"/>
                         <viewControllerLayoutGuide type="bottom" id="p4m-SC-fbG"/>
@@ -261,7 +261,6 @@
         <image name="Clipprlogo.png" width="1662" height="1536"/>
         <image name="add_photo_btn" width="20" height="19"/>
         <image name="language_icon" width="15" height="15"/>
-        <image name="onestar_filled" width="16" height="15"/>
         <image name="settings_btn" width="17" height="17"/>
         <image name="starfilled" width="37" height="35"/>
     </resources>

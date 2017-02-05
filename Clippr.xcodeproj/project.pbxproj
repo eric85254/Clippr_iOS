@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44B055D61E47DED1007FB34A /* StylistDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B055D51E47DED1007FB34A /* StylistDashViewController.swift */; };
+		44B055D81E47DF1E007FB34A /* ClientDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B055D71E47DF1E007FB34A /* ClientDashViewController.swift */; };
 		44BD17CD1E344A3A00CF805A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD17CC1E344A3A00CF805A /* AppDelegate.swift */; };
 		44BD17CF1E344A3A00CF805A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD17CE1E344A3A00CF805A /* ViewController.swift */; };
 		44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BD17D01E344A3A00CF805A /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44B055D51E47DED1007FB34A /* StylistDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistDashViewController.swift; sourceTree = "<group>"; };
+		44B055D71E47DF1E007FB34A /* ClientDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDashViewController.swift; sourceTree = "<group>"; };
 		44BD17C91E344A3A00CF805A /* Clippr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clippr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BD17CC1E344A3A00CF805A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BD17CE1E344A3A00CF805A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,12 +71,14 @@
 		44BD17CB1E344A3A00CF805A /* Clippr */ = {
 			isa = PBXGroup;
 			children = (
+				44B055D71E47DF1E007FB34A /* ClientDashViewController.swift */,
 				48E4579B1E345E240096D19F /* Clipprlogo.png */,
 				48E457991E345DE10096D19F /* Images */,
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
 				44BD17D31E344A3A00CF805A /* Assets.xcassets */,
+				44B055D51E47DED1007FB34A /* StylistDashViewController.swift */,
 				44BD17D51E344A3A00CF805A /* LaunchScreen.storyboard */,
 				44BD17D81E344A3A00CF805A /* Info.plist */,
 			);
@@ -156,6 +162,8 @@
 				44BD17CF1E344A3A00CF805A /* ViewController.swift in Sources */,
 				44F4D75B1E3ED81F002B3FEC /* HTTPS_model.swift in Sources */,
 				44BD17CD1E344A3A00CF805A /* AppDelegate.swift in Sources */,
+				44B055D61E47DED1007FB34A /* StylistDashViewController.swift in Sources */,
+				44B055D81E47DF1E007FB34A /* ClientDashViewController.swift in Sources */,
 				44F4D7591E3ED2DE002B3FEC /* signUpViewController.swift in Sources */,
 				489B5D041E35976E006A49AF /* SignInViewController.swift in Sources */,
 			);
