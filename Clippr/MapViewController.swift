@@ -1,5 +1,5 @@
 //
-//  ClientDashViewController.swift
+//  MapViewController.swift
 //  Clippr
 //
 //  Created by emgottfr on 2/5/17.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class ClientDashViewController: UIViewController {
+class MapViewController: UIViewController {
 
-  
-    
-    @IBOutlet weak var star: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
