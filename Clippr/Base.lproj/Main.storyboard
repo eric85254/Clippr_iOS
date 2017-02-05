@@ -9,37 +9,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Stylist Dash View Controller-->
-        <scene sceneID="rbZ-r7-uo0">
+        <!--View Controller-->
+        <scene sceneID="Awx-g7-dtG">
             <objects>
-                <viewController id="ZII-rE-LqH" customClass="StylistDashViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qw7-1M-zoh" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tPX-z5-Znl"/>
-                        <viewControllerLayoutGuide type="bottom" id="SX7-7g-SDc"/>
+                        <viewControllerLayoutGuide type="top" id="xYU-cR-gl1"/>
+                        <viewControllerLayoutGuide type="bottom" id="1FC-R7-umO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4ZE-3Z-4yz">
+                    <view key="view" contentMode="scaleToFill" id="Qa4-8i-Fuu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2N-JH-XCT">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Settings" image="settings_btn" id="TeG-v5-dE0"/>
+                                    <tabBarItem title="Map" image="language_icon" id="lxM-1c-dgA" colorLabel="IBBuiltInLabel-Red"/>
+                                    <tabBarItem title="map" image="language_icon" id="6zZ-lt-psa"/>
+                                    <tabBarItem title="Gallery" image="add_photo_btn" id="9N6-Ko-yIw"/>
+                                    <tabBarItem title="Favorites" image="starfilled" id="1Kv-ZC-hVM"/>
+                                </items>
+                                <color key="barTintColor" red="0.96078431372549022" green="0.50980392156862742" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="SZI-gM-pMZ"/>
-                        <barButtonItem image="settings_btn" id="ct6-h0-6AF"/>
-                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="dZ3-QV-3GP"/>
-                        <barButtonItem title="Item" id="Tdo-S9-LlW"/>
-                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="4ok-35-J6v"/>
-                        <barButtonItem image="language_icon" id="Big-td-5pT"/>
-                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="KcP-tY-BWw"/>
-                        <barButtonItem image="add_photo_btn" id="rIe-N5-q40"/>
-                        <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="9xf-AP-ief"/>
-                        <barButtonItem image="starfilled" id="cAx-mY-lOB"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Pq5-ea-dDD"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FXZ-7L-X7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySC-Ik-roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-530.39999999999998" y="689.5052473763119"/>
+            <point key="canvasLocation" x="-466" y="682"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="GtW-xW-Yeg">
@@ -78,7 +79,7 @@
                                 <connections>
                                     <action selector="attemptLogin:" destination="l30-fY-oTN" eventType="touchUpInside" id="QJp-nQ-iQ7"/>
                                     <action selector="attemptSignIn:" destination="l30-fY-oTN" eventType="touchUpInside" id="mvT-Ge-CdL"/>
-                                    <segue destination="ZII-rE-LqH" kind="show" id="tJL-Jg-Def"/>
+                                    <segue destination="Qw7-1M-zoh" kind="show" id="5hX-Rz-01J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3n-nA-6xy">
@@ -247,6 +248,11 @@
                                 <rect key="frame" x="160" y="617" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISd-yU-wMB">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
