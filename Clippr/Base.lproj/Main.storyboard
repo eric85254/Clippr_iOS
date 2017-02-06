@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="205.59999999999999" y="681.40929535232385"/>
         </scene>
-        <!--Map-->
+        <!--Appoinments-->
         <scene sceneID="XkI-Wr-6Yr">
             <objects>
-                <viewController id="Ft2-7m-JIO" customClass="AppointmentsStylistViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ft2-7m-JIO" customClass="AppointmentsClientsViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Iw-sX-RNx"/>
                         <viewControllerLayoutGuide type="bottom" id="arS-Oa-tuQ"/>
@@ -82,23 +82,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38V-MA-lof">
-                                <rect key="frame" x="168" y="28" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38V-MA-lof">
+                                <rect key="frame" x="94" y="20" width="187" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="language_icon" id="5c5-JV-4MG"/>
+                    <tabBarItem key="tabBarItem" title="Appoinments" image="profile" id="5c5-JV-4MG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDK-Ib-Q0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="2745"/>
+            <point key="canvasLocation" x="1200.8" y="2744.9775112443781"/>
         </scene>
-        <!--Appointments-->
+        <!--Reviews-->
+        <scene sceneID="D3N-vR-b3O">
+            <objects>
+                <viewController id="aw4-i9-a2s" customClass="ReviewsClientViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2bs-yK-PWY"/>
+                        <viewControllerLayoutGuide type="bottom" id="FxJ-mT-AA2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W6D-u3-hPS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5N-2X-9Zy">
+                                <rect key="frame" x="129" y="20" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reviews" image="star_icon_filled" id="dfM-In-tz3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1oq-HF-FO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965.5999999999999" y="2744.9775112443781"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="McQ-nv-oXN">
+            <objects>
+                <viewController id="Ce2-Ea-Guo" customClass="SettingsViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XDH-0f-3rd"/>
+                        <viewControllerLayoutGuide type="bottom" id="UQV-bP-Ljd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1os-gA-QKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-m8-zNa">
+                                <rect key="frame" x="129" y="20" width="116" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" id="jMO-QD-V8d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXm-rf-fDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2664.8000000000002" y="2744.9775112443781"/>
+        </scene>
+        <!--Map-->
         <scene sceneID="gAP-ZU-CIc">
             <objects>
                 <viewController id="bLA-9e-Zgn" customClass="MapViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,26 +166,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-rK-Xkt">
-                                <rect key="frame" x="133" y="20" width="108" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-rK-Xkt">
+                                <rect key="frame" x="155" y="20" width="64" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Appointments" image="profile" id="XUh-jD-T59"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="language_icon" id="XUh-jD-T59"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdV-k7-MMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="2745"/>
+            <point key="canvasLocation" x="261.60000000000002" y="2744.9775112443781"/>
         </scene>
-        <!--Settings-->
+        <!--Stylist Search-->
         <scene sceneID="bKE-Z1-c1a">
             <objects>
-                <viewController id="1Pf-l4-KD6" customClass="SettingsViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Pf-l4-KD6" customClass="ClientsUsingSearchViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qke-h2-Q2R"/>
                         <viewControllerLayoutGuide type="bottom" id="ESf-wA-B4D"/>
@@ -138,21 +194,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-g3-3BY">
-                                <rect key="frame" x="166" y="20" width="64" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stylist Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhP-g3-3BY">
+                                <rect key="frame" x="90" y="20" width="195" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" id="Iln-CT-j3y"/>
+                    <tabBarItem key="tabBarItem" title="Stylist Search" image="searchbtn" id="Iln-CT-j3y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuA-8c-Mj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655" y="2745"/>
+            <point key="canvasLocation" x="-655.20000000000005" y="2744.9775112443781"/>
         </scene>
         <!--Map-->
         <scene sceneID="aXT-kL-X2U">
@@ -328,6 +384,8 @@
                         <segue destination="1Pf-l4-KD6" kind="relationship" relationship="viewControllers" id="aXr-nE-aaL"/>
                         <segue destination="bLA-9e-Zgn" kind="relationship" relationship="viewControllers" id="GRp-WX-rD6"/>
                         <segue destination="Ft2-7m-JIO" kind="relationship" relationship="viewControllers" id="F5a-by-dOV"/>
+                        <segue destination="aw4-i9-a2s" kind="relationship" relationship="viewControllers" id="0zi-yV-14X"/>
+                        <segue destination="Ce2-Ea-Guo" kind="relationship" relationship="viewControllers" id="X7g-Qv-Y8C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xfa-OK-un4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,6 +534,7 @@
         <image name="add_photo_btn" width="20" height="19"/>
         <image name="language_icon" width="15" height="15"/>
         <image name="profile" width="22" height="20"/>
+        <image name="searchbtn" width="20" height="20"/>
         <image name="settings_btn" width="17" height="17"/>
         <image name="star_icon_filled" width="34" height="32"/>
     </resources>
