@@ -293,10 +293,39 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXA-r9-ftx">
+                                <rect key="frame" x="281" y="580" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add a photo!">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeAPhoto:" destination="WXt-5B-u6t" eventType="touchUpInside" id="zbu-gG-d2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEO-t5-dOJ">
+                                <rect key="frame" x="16" y="580" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload a cut! ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadAPhoto:" destination="WXt-5B-u6t" eventType="touchUpInside" id="nER-gM-xgL"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background_character" translatesAutoresizingMaskIntoConstraints="NO" id="1wP-6E-c02">
+                                <rect key="frame" x="59" y="86" width="242" height="233"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Portfolio" image="add_photo_btn" id="CKo-BQ-DNG"/>
+                    <connections>
+                        <outlet property="imageHolder" destination="1wP-6E-c02" id="6Fv-it-vQn"/>
+                        <outlet property="takePhotoButton" destination="QXA-r9-ftx" id="t9c-oM-K44"/>
+                        <outlet property="uploadPhotoButton" destination="OEO-t5-dOJ" id="EMx-q8-lwC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zU5-LV-MoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -540,6 +569,7 @@
     <resources>
         <image name="Clipprlogo.png" width="1662" height="1536"/>
         <image name="add_photo_btn" width="20" height="19"/>
+        <image name="background_character" width="242" height="233"/>
         <image name="language_icon" width="15" height="15"/>
         <image name="profile" width="22" height="20"/>
         <image name="searchbtn" width="20" height="20"/>
