@@ -22,6 +22,8 @@
 		44FA6A5C1E47F80C00867AAE /* ProfileClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */; };
 		44FA6A5E1E47F82000867AAE /* ReviewsClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */; };
 		44FA6A601E47F9E000867AAE /* ClientsUsingSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */; };
+		4837274D1E57E0DB00DEB045 /* settingsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */; };
+		4837274F1E57E98F00DEB045 /* stylistSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837274E1E57E98F00DEB045 /* stylistSettings.swift */; };
 		483BC5E91E47ED6700679FEF /* settingsStylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BC5E81E47ED6700679FEF /* settingsStylistViewController.swift */; };
 		483BC5EB1E47EE1400679FEF /* appointmentsStylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BC5EA1E47EE1400679FEF /* appointmentsStylistsViewController.swift */; };
 		483BC5ED1E47EE4200679FEF /* mapStylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BC5EC1E47EE4200679FEF /* mapStylistViewController.swift */; };
@@ -50,6 +52,8 @@
 		44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClientViewController.swift; sourceTree = "<group>"; };
 		44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsClientViewController.swift; sourceTree = "<group>"; };
 		44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsUsingSearchViewController.swift; sourceTree = "<group>"; };
+		4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsControllerTableViewController.swift; sourceTree = "<group>"; };
+		4837274E1E57E98F00DEB045 /* stylistSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSettings.swift; sourceTree = "<group>"; };
 		483BC5E81E47ED6700679FEF /* settingsStylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsStylistViewController.swift; sourceTree = "<group>"; };
 		483BC5EA1E47EE1400679FEF /* appointmentsStylistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appointmentsStylistsViewController.swift; sourceTree = "<group>"; };
 		483BC5EC1E47EE4200679FEF /* mapStylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapStylistViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		44BD17C01E344A3A00CF805A = {
 			isa = PBXGroup;
 			children = (
+				4837274E1E57E98F00DEB045 /* stylistSettings.swift */,
 				44F4D75A1E3ED81F002B3FEC /* HTTPS_model.swift */,
 				44F4D7581E3ED2DE002B3FEC /* signUpViewController.swift */,
 				489B5D031E35976E006A49AF /* SignInViewController.swift */,
@@ -99,6 +104,7 @@
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
+				4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */,
 				44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */,
 				44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */,
 				44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */,
@@ -193,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FA6A5A1E47F60600867AAE /* AppointmentsClientsViewController.swift in Sources */,
+				4837274F1E57E98F00DEB045 /* stylistSettings.swift in Sources */,
 				44FA6A5C1E47F80C00867AAE /* ProfileClientViewController.swift in Sources */,
+				4837274D1E57E0DB00DEB045 /* settingsControllerTableViewController.swift in Sources */,
 				44FA6A601E47F9E000867AAE /* ClientsUsingSearchViewController.swift in Sources */,
 				483BC5EF1E47EE9300679FEF /* portfolioStylistViewController.swift in Sources */,
 				44BD17CF1E344A3A00CF805A /* ViewController.swift in Sources */,
