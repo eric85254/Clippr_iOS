@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import GoogleMaps
+import Alamofire
+import Gloss
+
 
 class ViewController: UIViewController {
 
