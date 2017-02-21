@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		087172EB1DF6678D8F1A0881 /* Pods_Clippr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794975ADCB4D95E9F1CE6CFE /* Pods_Clippr.framework */; };
+		448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EB2831E5BE6C500CB6183 /* Constants.swift */; };
 		44AEAB6E1E57F3C1003304EE /* ClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */; };
 		44AEAB701E57F54E003304EE /* AccountSetClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */; };
 		44AEAB721E57F55C003304EE /* PaymentSetClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB711E57F55C003304EE /* PaymentSetClientViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448EB2831E5BE6C500CB6183 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientSettingsViewController.swift; sourceTree = "<group>"; };
 		44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSetClientViewController.swift; sourceTree = "<group>"; };
 		44AEAB711E57F55C003304EE /* PaymentSetClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentSetClientViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				483727501E57F75300DEB045 /* stylistBalanceViewController.swift */,
 				4837274E1E57E98F00DEB045 /* stylistSettings.swift */,
 				44F4D75A1E3ED81F002B3FEC /* HTTPS_model.swift */,
+				448EB2831E5BE6C500CB6183 /* Constants.swift */,
 				44F4D7581E3ED2DE002B3FEC /* signUpViewController.swift */,
 				489B5D031E35976E006A49AF /* SignInViewController.swift */,
 				44BD17CB1E344A3A00CF805A /* Clippr */,
@@ -314,6 +317,7 @@
 				483BC5EF1E47EE9300679FEF /* portfolioStylistViewController.swift in Sources */,
 				44BD17CF1E344A3A00CF805A /* ViewController.swift in Sources */,
 				483BC5ED1E47EE4200679FEF /* mapStylistViewController.swift in Sources */,
+				448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */,
 				44F4D75B1E3ED81F002B3FEC /* HTTPS_model.swift in Sources */,
 				483BC5E91E47ED6700679FEF /* settingsStylistViewController.swift in Sources */,
 				44AEAB701E57F54E003304EE /* AccountSetClientViewController.swift in Sources */,

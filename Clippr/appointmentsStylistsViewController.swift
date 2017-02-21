@@ -9,7 +9,8 @@
 import UIKit
 
 class appointmentsStylistsViewController: UIViewController {
-
+    let model = HTTPS_model()
+    @IBOutlet weak var testButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,11 @@ class appointmentsStylistsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func testForInfo(_ sender: UIButton) {
+        model.download()
+            
+        
+    }
 
     /*
     // MARK: - Navigation

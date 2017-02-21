@@ -57,6 +57,11 @@
                                     <segue destination="dHu-ED-lBS" kind="show" id="aeY-uh-Sk7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-MB-bzy">
+                                <rect key="frame" x="25" y="573" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Try to get creds"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
@@ -399,10 +404,21 @@
                                     <segment title="Requests"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLZ-GT-cOO">
+                                <rect key="frame" x="138" y="351" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test for user info"/>
+                                <connections>
+                                    <action selector="testForInfo:" destination="y2B-os-1IU" eventType="touchUpInside" id="HDa-AP-W3l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Appointments" image="profile" id="Xbw-E2-rI9"/>
+                    <connections>
+                        <outlet property="testButton" destination="eLZ-GT-cOO" id="QXh-lg-e8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5Q-18-bCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -821,7 +837,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e1e-gd-JBg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" selectedImage="settings_btn" id="QfZ-Nv-GCB"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ctr-oB-f8Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ctr-oB-f8Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -982,7 +998,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqn-d6-0un" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" id="0I0-CL-RCf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zx-QQ-seC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2Zx-QQ-seC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1108,7 +1124,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnd-vZ-9pg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V4C-fO-bU6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="V4C-fO-bU6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

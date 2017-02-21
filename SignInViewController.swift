@@ -124,6 +124,10 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBAction func attemptLogin(_ sender: Any) {
-        model.makePostCallLogin(username: self.userNameField.text!, password: self.passwordField.text!)
+        
+        print("THIS CALL IS ABOUT TO HAPPEN COMING IN HOTTTTTT")
+        print(model.makePostCallLogin(username: self.userNameField.text!, password: self.passwordField.text!))
+        
+        ConUsername = self.userNameField.text!
     }
 }
