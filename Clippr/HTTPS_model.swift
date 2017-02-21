@@ -38,7 +38,7 @@ class HTTPS_model
             var didLogin = false
         
             // This makes the un-encoded JSON for the username and password login information
-            let json: [String: Any] = [
+            let parameters: Parameters = [
                 "username":username,
                 "password":password
             ]
@@ -47,7 +47,7 @@ class HTTPS_model
         
             // Makes the HTTPS post request to attempt to login, it also encodes the constant json as an actual JSON object
         
-            Alamofire.request(urlZ!, method: .post, parameters: json, encoding: JSONEncoding.default).validate().responseJSON { response in
+            Alamofire.request(urlZ!, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success:
                 print("Validation Successful")
