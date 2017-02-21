@@ -11,13 +11,18 @@ import UIKit
 class SignInViewController: UIViewController, UITextFieldDelegate {
     let model = HTTPS_model()
     
+    @IBOutlet weak var invalidLogin: UILabel!
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
+    
+    @IBOutlet weak var Try: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.passwordField.delegate = self
         self.userNameField.delegate = self
+        self.invalidLogin.isHidden = true
 
         
         // Do any additional setup after loading the view.
@@ -127,7 +132,22 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         print("THIS CALL IS ABOUT TO HAPPEN COMING IN HOTTTTTT")
         print(model.makePostCallLogin(username: self.userNameField.text!, password: self.passwordField.text!))
-        
+        if model.makePostCallLogin(username: self.userNameField.text!, password: self.passwordField.text!) == true
+        {
+            self.invalidLogin.isHidden = true
+            shouldPerformSegue(withIdentifier: "ToStylistDash", sender: signIn)
+        }
+        else
+        {
+            self.invalidLogin.isHidden = false
+        }
         ConUsername = self.userNameField.text!
     }
+    
+    
+    @IBAction func tryTest(_ sender: UIButton) {
+        print("TRY TEST")
+        print(model.download())
+    }
+    
 }

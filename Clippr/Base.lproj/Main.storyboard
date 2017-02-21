@@ -46,7 +46,7 @@
                                 <connections>
                                     <action selector="attemptLogin:" destination="l30-fY-oTN" eventType="touchUpInside" id="QJp-nQ-iQ7"/>
                                     <action selector="attemptSignIn:" destination="l30-fY-oTN" eventType="touchUpInside" id="mvT-Ge-CdL"/>
-                                    <segue destination="fPl-Fw-XeQ" kind="show" id="Tmc-9P-qqf"/>
+                                    <segue destination="fPl-Fw-XeQ" kind="show" identifier="toStylistDash" id="Tmc-9P-qqf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3n-nA-6xy">
@@ -54,18 +54,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="dHu-ED-lBS" kind="show" id="aeY-uh-Sk7"/>
+                                    <segue destination="dHu-ED-lBS" kind="show" identifier="ToClientDash" id="aeY-uh-Sk7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-MB-bzy">
                                 <rect key="frame" x="25" y="573" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Try to get creds"/>
+                                <connections>
+                                    <action selector="tryTest:" destination="l30-fY-oTN" eventType="touchUpInside" id="ydV-Yu-BZA"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invalid Login Please Try Again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abt-6G-NTB">
+                                <rect key="frame" x="57" y="451" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <connections>
+                        <outlet property="Try" destination="abD-MB-bzy" id="anx-wA-arF"/>
+                        <outlet property="invalidLogin" destination="Abt-6G-NTB" id="giF-ie-w6D"/>
                         <outlet property="passwordField" destination="gYi-j1-JTT" id="NWP-HU-HRe"/>
                         <outlet property="signIn" destination="sie-15-KOZ" id="MjO-ct-Fbg"/>
                         <outlet property="userNameField" destination="UNV-7V-qny" id="r6H-DX-T1U"/>

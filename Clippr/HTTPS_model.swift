@@ -32,20 +32,37 @@ class HTTPS_model
     }
     
     
-    func makePostCallLogin(username: String, password: String)
+    func makePostCallLogin(username: String, password: String) -> Bool
     {
+            // The value to be returned
+            var didLogin = false
         
+            // This makes the un-encoded JSON for the username and password login information
             let json: [String: Any] = [
                 "username":username,
                 "password":password
             ]
+            // turns the URL into a URL object
             let urlZ = URL(string: currentURL)
-        let result = Alamofire.request(urlZ!, method: .post, parameters: json, encoding: JSONEncoding.default).responseJSON { response in
-            debugPrint(response)
+        
+            // Makes the HTTPS post request to attempt to login, it also encodes the constant json as an actual JSON object
+        
+            Alamofire.request(urlZ!, method: .post, parameters: json, encoding: JSONEncoding.default).validate().responseJSON { response in
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                didLogin = true
+            case .failure(let error):
+                print(error)
+                didLogin = false
+            }
+            
+            
+            /*debugPrint(response)
             
             if let json2 = response.result.value {
                 print("JSON: \(json2)")
-            }
+            }*/
         
             /*let jsonData = try? JSONSerialization.data(withJSONObject: json)
             
@@ -74,6 +91,7 @@ class HTTPS_model
         }*/
             
             }
+        return didLogin
     }
     
 }
