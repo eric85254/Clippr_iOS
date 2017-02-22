@@ -130,18 +130,21 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func attemptLogin(_ sender: Any) {
         
-        print("THIS CALL IS ABOUT TO HAPPEN COMING IN HOTTTTTT")
-        print(model.makePostCallLogin(username: self.userNameField.text!, password: self.passwordField.text!))
-        if model.makePostCallLogin(username: self.userNameField.text!, password: self.passwordField.text!) == true
+        print("About to make POST call")
+        
+        //print(model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!))
+        
+        if model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!) == true
         {
             self.invalidLogin.isHidden = true
             shouldPerformSegue(withIdentifier: "ToStylistDash", sender: signIn)
+            ConUsername = self.userNameField.text!
         }
         else
         {
             self.invalidLogin.isHidden = false
         }
-        ConUsername = self.userNameField.text!
+        
     }
     
     
