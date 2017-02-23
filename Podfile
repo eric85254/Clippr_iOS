@@ -18,5 +18,6 @@ pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'GoogleAPIClient/Calendar', '~> 1.0.2'
 pod 'GTMOAuth2', '~> 1.1.0'
+pod 'Alamofire-GLoss'
 
 end

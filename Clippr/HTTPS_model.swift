@@ -22,7 +22,7 @@ class HTTPS_model
     
     
     
-    /*struct RepoOwner : Decodable
+    struct RepoOwner : Encodable
     {
         var uName: String?
         var pWord: String?
@@ -45,7 +45,7 @@ class HTTPS_model
                 "password" ~~> self.pWord
                 ])
         }
-    }*/
+    }
     
   
     
@@ -89,15 +89,22 @@ class HTTPS_model
         
         func makePostCallLogin(usernameZ: String, passwordZ: String) -> Bool
     {
-            // The value to be returned
+            // The value to be returned, defaults to fasle
             var didLogin = false
         
-           // RepoOwner.init(username: usernameZ)
-            //RepoOwner.init(password: passwordZ)
-           // let newJson = RepoOwner.toJSON
+        
+            // Creates an intance of the GLOSS struct with the inputed username and password
+            var RepoOwnerIN = RepoOwner()
+            RepoOwnerIN.uName = usernameZ
+            RepoOwnerIN.pWord = passwordZ
+        
+        
+        
+            let newJson = RepoOwnerIN.toJSON()
+        
             // This makes the un-encoded JSON for the username and password login information
         
-        let parameters: Parameters = [
+            let parameters: Parameters = [
                 "username":usernameZ,
                 "password":passwordZ
             ]
@@ -105,8 +112,9 @@ class HTTPS_model
             let urlZ = URL(string: currentURL)
         
             // Makes the HTTPS post request to attempt to login, it also encodes the constant json as an actual JSON object
-        
-            Alamofire.request(urlZ!, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { response in
+            print("!!!!!!This is the JSON!!!!!")
+            print(newJson!)
+        Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
             switch response.result {
             case .success:
                 print("Validation Successful")
