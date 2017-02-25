@@ -9,7 +9,7 @@
 import UIKit
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
-    let model = HTTPS_model()
+    
     
     @IBOutlet weak var invalidLogin: UILabel!
     @IBOutlet weak var signIn: UIButton!
@@ -23,7 +23,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.passwordField.delegate = self
         self.userNameField.delegate = self
         self.invalidLogin.isHidden = true
-
+        
         
         // Do any additional setup after loading the view.
     }

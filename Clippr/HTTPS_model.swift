@@ -20,8 +20,7 @@ class HTTPS_model
     
     
     
-    
-    
+
     struct RepoOwner : Encodable
     {
         var uName: String?
@@ -49,7 +48,13 @@ class HTTPS_model
     
   
     
+    func doLogout()
+    {
+        let urlL = URL(string: logoutURL)
+        Alamofire.request(urlL!)
+    }
     func download(){
+        
         let currentloginURL = URL(string: testURL)
        
         let result = Alamofire.request(currentloginURL!, method: .get).responseJSON { response in
@@ -98,8 +103,13 @@ class HTTPS_model
             RepoOwnerIN.uName = usernameZ
             RepoOwnerIN.pWord = passwordZ
         
+            let urlZ = URL(string: currentURL)
+            //let urlL = URL(string: logoutURL)
+            // Make a GET call to logout 
+            doLogout()
+            //Alamofire.request(urlL!)
         
-        
+ 
             let newJson = RepoOwnerIN.toJSON()
         
             // This makes the un-encoded JSON for the username and password login information
@@ -109,7 +119,7 @@ class HTTPS_model
                 "password":passwordZ
             ]
             // turns the URL into a URL object
-            let urlZ = URL(string: currentURL)
+        
         
             // Makes the HTTPS post request to attempt to login, it also encodes the constant json as an actual JSON object
             print("!!!!!!This is the JSON!!!!!")
@@ -118,6 +128,7 @@ class HTTPS_model
             switch response.result {
             case .success:
                 print("Validation Successful")
+                print(response.description)
                 didLogin = true
             case .failure(let error):
                 print(error)
@@ -125,39 +136,6 @@ class HTTPS_model
             }
         }
             return didLogin
-            
-            /*debugPrint(response)
-            
-            if let json2 = response.result.value {
-                print("JSON: \(json2)")
-            }*/
-        
-            /*let jsonData = try? JSONSerialization.data(withJSONObject: json)
-            
-            // create post request
-            let url = URL(string: currentURL)!
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-            // insert json data to the request
-            request.httpBody = jsonData
-            
-            let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                guard let data = data, error == nil else {
-                    print(error?.localizedDescription ?? "No data")
-                    return
-                }
-                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                if let responseJSON = responseJSON as? [String: Any] {
-                    print(responseJSON)
-                }
-            }
-            
-            task.resume()
-        return true
-        }*/
-            
         
         
     }
