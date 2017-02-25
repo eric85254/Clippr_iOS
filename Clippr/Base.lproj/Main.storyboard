@@ -1024,7 +1024,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqn-d6-0un" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" id="0I0-CL-RCf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2Zx-QQ-seC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zx-QQ-seC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
