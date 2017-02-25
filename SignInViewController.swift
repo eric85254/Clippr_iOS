@@ -62,11 +62,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         print("About to make POST call")
         
         //print(model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!))
+        model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!)
+        print("IsLogged in = ")
         
-        if model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!) == true
+        print (isLoggedIn)
+        if  isLoggedIn == true
         {
             self.invalidLogin.isHidden = true
-            shouldPerformSegue(withIdentifier: "ToStylistDash", sender: signIn)
+            shouldPerformSegue(withIdentifier: "toStylistDash", sender: self)
             ConUsername = self.userNameField.text!
         }
         else

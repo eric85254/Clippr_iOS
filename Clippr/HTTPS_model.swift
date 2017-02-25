@@ -18,7 +18,10 @@ class HTTPS_model
    
     
     
-    
+    func closureTest(closure: () -> Void)
+    {
+        
+    }
     
 
     struct RepoOwner : Encodable
@@ -79,11 +82,14 @@ class HTTPS_model
             "is_stylist":isStylist,
             "profile_picture": "https://clipprphotos.s3.amazonaws.com:443/defaults/default_user.png?Signature=tKSDthudC2BOHbJcpV4macO2PmY%3D&Expires=1487733630&AWSAccessKeyId=AKIAINM4DXIZAY2HWJBA"
         ]
+        // Do a logout just to be sure
         
+        doLogout()
         Alamofire.request(currentURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success:
                 print("Validation Successful")
+                print(response.description)
             case .failure(let error):
                 print(error)
                 
@@ -92,11 +98,11 @@ class HTTPS_model
     }
     }
         
-        func makePostCallLogin(usernameZ: String, passwordZ: String) -> Bool
+    func makePostCallLogin(usernameZ: String, passwordZ: String) -> Bool
     {
             // The value to be returned, defaults to fasle
             var didLogin = false
-        
+            var flag = false
         
             // Creates an intance of the GLOSS struct with the inputed username and password
             var RepoOwnerIN = RepoOwner()
@@ -124,19 +130,30 @@ class HTTPS_model
             // Makes the HTTPS post request to attempt to login, it also encodes the constant json as an actual JSON object
             print("!!!!!!This is the JSON!!!!!")
             print(newJson!)
-        Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
+        
+            Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
             switch response.result {
             case .success:
                 print("Validation Successful")
                 print(response.description)
                 didLogin = true
+                flag = true
+               // myFunctionCompletionHandler()
+                
+                
             case .failure(let error):
                 print(error)
                 didLogin = false
+                flag = true
+               // myFunctionCompletionHandler()
             }
+            
         }
-            return didLogin
+            //Alamofire.request(signUpURL)
         
+     
+        
+            return didLogin
         
     }
     

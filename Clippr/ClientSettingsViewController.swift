@@ -10,6 +10,7 @@ import UIKit
 
 class ClientSettingsViewController: UITableViewController {
 
+    @IBOutlet weak var logOutButton: UITableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +22,11 @@ class ClientSettingsViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 4 {
+            model.doLogout()
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -31,5 +36,6 @@ class ClientSettingsViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
