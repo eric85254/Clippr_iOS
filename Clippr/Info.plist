@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BUNDLE_ID</key>
+	<string>Clippr.Clippr</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.791886772255-g11hj2eknirbrmov4q6oosphdafnieof</string>
+	<key>CLIENT_ID</key>
+	<string>791886772255-g11hj2eknirbrmov4q6oosphdafnieof.apps.googleusercontent.com</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
