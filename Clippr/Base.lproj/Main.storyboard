@@ -414,6 +414,9 @@
                                     <segment title="Upcoming"/>
                                     <segment title="Requests"/>
                                 </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="y2B-os-1IU" eventType="valueChanged" id="4zY-MC-fez"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLZ-GT-cOO">
                                 <rect key="frame" x="138" y="351" width="116" height="30"/>
@@ -423,17 +426,26 @@
                                     <action selector="testForInfo:" destination="y2B-os-1IU" eventType="touchUpInside" id="HDa-AP-W3l"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEST 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-aj-Xmf">
+                                <rect key="frame" x="290" y="28" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Appointments" image="profile" id="Xbw-E2-rI9"/>
                     <connections>
+                        <outlet property="stylistAppointments" destination="mpW-3q-L4u" id="REY-gV-uNF"/>
                         <outlet property="testButton" destination="eLZ-GT-cOO" id="QXh-lg-e8f"/>
+                        <outlet property="testLabel" destination="0sO-aj-Xmf" id="cKH-Wn-HSj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5Q-18-bCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7350" y="2745"/>
+            <point key="canvasLocation" x="-7351.1999999999998" y="2744.9775112443781"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="yBr-rR-P0l">
@@ -751,11 +763,20 @@
                                 <rect key="frame" x="67" y="28" width="240" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-Vy-ufp">
+                                <rect key="frame" x="45" y="523" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fPl-Fw-XeQ" kind="show" id="ZRv-T4-Ia2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <connections>
                         <outlet property="clipprLogo" destination="lC2-lO-hxo" id="8Yr-MH-So2"/>
+                        <outlet property="debug" destination="SOl-Vy-ufp" id="dO8-5j-p0e"/>
                         <outlet property="passwordRecovery" destination="o95-hd-B6c" id="NB1-3G-MrN"/>
                         <outlet property="signIn" destination="OOK-2j-iPO" id="fxo-bu-f4y"/>
                         <outlet property="signUP" destination="Stn-Q3-qse" id="ZeQ-ee-cTw"/>
@@ -1024,7 +1045,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqn-d6-0un" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" id="0I0-CL-RCf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zx-QQ-seC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2Zx-QQ-seC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1175,6 +1196,7 @@
         <image name="star_icon_filled" width="34" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ZRv-T4-Ia2"/>
         <segue reference="5JT-vA-VeP"/>
     </inferredMetricsTieBreakers>
 </document>
