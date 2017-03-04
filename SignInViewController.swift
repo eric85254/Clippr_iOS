@@ -62,7 +62,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         print("About to make POST call")
         
         //print(model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!))
-        model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!)
+        model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!, completionHandler: model.handler)
         print("IsLogged in = ")
         
         print (isLoggedIn)
