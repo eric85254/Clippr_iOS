@@ -45,6 +45,19 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    func goToStylistDash()
+    {
+        self.invalidLogin.isHidden = true
+        ConUsername = self.userNameField.text!
+        performSegue(withIdentifier: "toStylistDash", sender: self)
+    }
+    
+    func failedToLogin()
+    {
+        self.invalidLogin.isHidden = false
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -62,11 +75,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         print("About to make POST call")
         
         //print(model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!))
-        model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!, completionHandler: model.handler)
+        model.makePostCallLogin(usernameZ: self.userNameField.text!, passwordZ: self.passwordField.text!, instance: self)
         print("IsLogged in = ")
         
         print (isLoggedIn)
-        if  isLoggedIn == true
+        /*if  isLoggedIn == true
         {
             self.invalidLogin.isHidden = true
             shouldPerformSegue(withIdentifier: "toStylistDash", sender: self)
@@ -75,7 +88,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         else
         {
             self.invalidLogin.isHidden = false
-        }
+        }*/
         
     }
     
