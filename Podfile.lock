@@ -1,5 +1,13 @@
 PODS:
   - Alamofire (4.3.0)
+  - Alamofire-Gloss (2.0.0):
+    - Alamofire-Gloss/Core (= 2.0.0)
+  - Alamofire-Gloss/Core (2.0.0):
+    - Alamofire (~> 4.0)
+    - Gloss (~> 1.0)
+  - Alamofire-Synchronous (4.0.0):
+    - Alamofire (~> 4.0)
+  - AppAuth (0.7.1)
   - Gloss (1.2.1)
   - GoogleAPIClient/Calendar (1.0.5):
     - GoogleAPIClient/Core
@@ -23,6 +31,9 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
+  - Alamofire-Gloss
+  - Alamofire-Synchronous (~> 4.0)
+  - AppAuth
   - Gloss (~> 1.2)
   - GoogleAPIClient/Calendar (~> 1.0.2)
   - GoogleMaps
@@ -31,6 +42,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Alamofire-Gloss: dea192a13e23d323415e80e9b18d53915fd484bf
+  Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
+  AppAuth: c56d352b0d50bb34dbb302d7ba50b20aa6b6ae89
   Gloss: 9ab33b8ede01e4232571d43a6bf9259b85d1de69
   GoogleAPIClient: 4a6b0b807de8b1115a2835180b25dd93dc60f1ea
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
@@ -38,6 +52,6 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
 
-PODFILE CHECKSUM: b483b69d3b5f4fd5b6c5af80041907cd920f2763
+PODFILE CHECKSUM: 295599fd5589d813efcf07fda5717306cdb3598e
 
 COCOAPODS: 1.2.0

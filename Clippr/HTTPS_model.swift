@@ -71,7 +71,10 @@ class HTTPS_model
         
     }
     }
-    
+    func ViewFunc (instance: SignInViewController)
+    {
+        instance.goToStylistDash()
+    }
     func makePostSignUP(firstName: String, lastName: String, email: String, phonenumber: String, isStylist: String)
     {
         let parameters: Parameters = [
@@ -98,7 +101,7 @@ class HTTPS_model
     }
     }
         
-    func makePostCallLogin(usernameZ: String, passwordZ: String, completionHandler:@escaping (Bool) -> ()) -> Bool
+    func makePostCallLogin(usernameZ: String, passwordZ: String, instance: SignInViewController) -> Bool
     {
             // The value to be returned, defaults to fasle
             var didLogin = false
@@ -131,22 +134,25 @@ class HTTPS_model
             print("!!!!!!This is the JSON!!!!!")
             print(newJson!)
         
-            Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
+        Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
             switch response.result {
             case .success:
-                completionHandler(true)
+                instance.goToStylistDash()
+                
                 print("Validation Successful")
                 print(response.description)
-                didLogin = true
+                isLoggedIn = true
                 flag = true
+                
                // myFunctionCompletionHandler()
                 
                 
             case .failure(let error):
-                completionHandler(false)
+                instance.failedToLogin()
                 print(error)
-                didLogin = false
+                isLoggedIn = false
                 flag = true
+                
                // myFunctionCompletionHandler()
             }
             
@@ -160,7 +166,8 @@ class HTTPS_model
     }
     func handler(test: Bool) -> ()
     {
-       print("In Handler")
+       print("Is in Handler")
+        isLoggedIn = test
     }
     
     
