@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var clipprLogo: UIImageView!
     
+    @IBOutlet weak var debug: UIButton!
     @IBOutlet weak var passwordRecovery: UILabel!
     @IBOutlet weak var signUP: UIButton!
     @IBOutlet weak var signIn: UIButton!
