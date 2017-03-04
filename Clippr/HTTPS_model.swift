@@ -75,7 +75,11 @@ class HTTPS_model
         func toJSON() -> JSON? {
             return jsonify([
                 "first_name" ~~> self.fName,
-                "last_name" ~~> self.lName
+                "last_name" ~~> self.lName,
+                "email" ~~> self.email,
+                "phonenumber" ~~> self.phone,
+                "is_stylist" ~~> self.isStylist,
+                "profile_picture" ~~> "https://clipprphotos.s3.amazonaws.com:443/defaults/default_user.png?Signature=tKSDthudC2BOHbJcpV4macO2PmY%3D&Expires=1487733630&AWSAccessKeyId=AKIAINM4DXIZAY2HWJBA"
                 ])
         }
     }
