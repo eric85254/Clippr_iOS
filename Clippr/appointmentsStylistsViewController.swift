@@ -45,7 +45,7 @@ class appointmentsStylistsViewController: UIViewController, UITextViewDelegate {
             break;
         default:
             appointmentsScrollView = UIScrollView(frame: view.bounds)
-            appointmentsScrollView.backgroundColor = UIColor.blue
+            appointmentsScrollView.backgroundColor = UIColor.black
             appointmentsScrollView.autoresizingMask = UIViewAutoresizing.flexibleWidth;
             appointmentsScrollView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
             appointmentsScrollView.frame.origin = CGPoint(x: 7, y: 100)
