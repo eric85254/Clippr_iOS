@@ -49,6 +49,36 @@ class HTTPS_model
         }
     }
     
+    struct RepoMaker : Encodable
+    {
+        var fName: String?
+        var lName: String?
+        var email: String?
+        var phone: String?
+        var isStylist: String?
+        var pic: String?
+        
+        
+        // init(username emailEntry: String)
+        // {
+        //   uName = emailEntry
+        // }
+        //init(password passName: String)
+        //{
+        //  pWord = passName
+        // }
+        
+        // MARK: - Deserialization
+        // ...
+        
+        // MARK: - Serialization
+        func toJSON() -> JSON? {
+            return jsonify([
+                "first_name" ~~> self.fName,
+                "last_name" ~~> self.lName
+                ])
+        }
+    }
   
     
     func doLogout()
@@ -88,7 +118,7 @@ class HTTPS_model
         // Do a logout just to be sure
         
         doLogout()
-        Alamofire.request(currentURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { response in
+        Alamofire.request(currentURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
             switch response.result {
             case .success:
                 print("Validation Successful")
@@ -137,10 +167,27 @@ class HTTPS_model
         Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
             switch response.result {
             case .success:
-                instance.goToStylistDash()
                 
+                
+                
+               if let json = response.result.value as? [String: String]
+               {
+                
+                if (json["is_stylist"]! == "YES")
+                {
+                    print("Went to Stylist")
+                    instance.goToStylistDash()
+                }
+                else
+                {
+                  print("Went to Client")
+                  instance.goToClientDash()
+                }
+               }
+                //instance.goToStylistDash()
                 print("Validation Successful")
                 print(response.description)
+                print("printed all of them")
                 isLoggedIn = true
                 flag = true
                 

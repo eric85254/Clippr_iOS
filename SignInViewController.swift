@@ -61,7 +61,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     {
         self.invalidLogin.isHidden = true
         ConUsername = self.userNameField.text!
-        performSegue(withIdentifier: "toStylistDash", sender: self)
+        performSegue(withIdentifier: "toClientDash", sender: self)
     }
     
     /*

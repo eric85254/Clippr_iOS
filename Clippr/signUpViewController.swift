@@ -19,6 +19,8 @@ class signUpViewController: UIViewController {
     
     @IBOutlet weak var SignUp: UIButton!
     
+    var yesOrNO : String = ""
+    
     let model = HTTPS_model()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +32,21 @@ class signUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func indexChanged(_ sender: Any) {
+        switch isStylist.selectedSegmentIndex
+        {
+        case 0:
+            yesOrNO = "YES"
+        case 1:
+            yesOrNO = "NO"
+            
+        default:
+            yesOrNO = "NO"
+        }
+    }
     
     @IBAction func attemptSignIn(_ sender: UIButton) {
-            model.makePostSignUP(firstName: self.fName.text!, lastName: self.lName.text!, email: self.email.text!, phonenumber: self.phoneNum.text!, isStylist: "YES")
+            model.makePostSignUP(firstName: self.fName.text!, lastName: self.lName.text!, email: self.email.text!, phonenumber: self.phoneNum.text!, isStylist: yesOrNO)
     }
 
     /*
