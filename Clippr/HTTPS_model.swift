@@ -98,7 +98,7 @@ class HTTPS_model
     }
     }
         
-    func makePostCallLogin(usernameZ: String, passwordZ: String, completionHandler:@escaping (Bool) -> ()) -> Bool
+    func makePostCallLogin(usernameZ: String, passwordZ: String, completionHandler: @escaping (Bool) -> (Bool)) -> Bool
     {
             // The value to be returned, defaults to fasle
             var didLogin = false
@@ -134,19 +134,19 @@ class HTTPS_model
             Alamofire.request(urlZ!, method: .post, parameters: newJson!, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
             switch response.result {
             case .success:
-                completionHandler(true)
                 print("Validation Successful")
                 print(response.description)
-                didLogin = true
+                isLoggedIn = true
                 flag = true
+                completionHandler(true)
                // myFunctionCompletionHandler()
                 
                 
             case .failure(let error):
-                completionHandler(false)
                 print(error)
-                didLogin = false
+                isLoggedIn = true
                 flag = true
+                completionHandler(false)
                // myFunctionCompletionHandler()
             }
             
@@ -158,9 +158,9 @@ class HTTPS_model
             return didLogin
         
     }
-    func handler(test: Bool) -> ()
+    func handler(test: Bool) -> (Bool)
     {
-       print("In Handler")
+       return test
     }
     
     
