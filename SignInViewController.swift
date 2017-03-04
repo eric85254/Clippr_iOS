@@ -57,6 +57,12 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.invalidLogin.isHidden = false
     }
     
+    func goToClientDash()
+    {
+        self.invalidLogin.isHidden = true
+        ConUsername = self.userNameField.text!
+        performSegue(withIdentifier: "toStylistDash", sender: self)
+    }
     
     /*
     // MARK: - Navigation
