@@ -13,6 +13,7 @@ let restRoot = "https://clippr-beta.herokuapp.com/api/"
 let logoutURL = "https://clippr-beta.herokuapp.com/profile/logout/"
 let testURL = "https://clippr-beta.herokuapp.com/api/stylist/"
 let signUpURL = "https://clippr-beta.herokuapp.com/api/user/"
+let stylistListURL = URL(string:"https://clippr-beta.herokuapp.com/stylist/")
 
 typealias SentComplete = () -> ()
 

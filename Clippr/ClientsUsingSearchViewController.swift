@@ -10,6 +10,10 @@ import UIKit
 
 class ClientsUsingSearchViewController: UIViewController {
 
+    let model = stylistSearchModel()
+    @IBOutlet weak var foundStylists: UITableView!
+    @IBOutlet weak var ZipEn: UITextField!
+    @IBOutlet weak var FindBut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +25,10 @@ class ClientsUsingSearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func searchStylists(_ sender: Any) {
+        model.getStylistList(location: "1")
+        print("Made the get call")
+    }
 
     /*
     // MARK: - Navigation

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		087172EB1DF6678D8F1A0881 /* Pods_Clippr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794975ADCB4D95E9F1CE6CFE /* Pods_Clippr.framework */; };
+		4414E7041E74A65C00EC98E1 /* stylistSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */; };
+		448DBAEC1E74A55C00E68D74 /* stylistSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */; };
 		448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EB2831E5BE6C500CB6183 /* Constants.swift */; };
 		44AEAB6E1E57F3C1003304EE /* ClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */; };
 		44AEAB701E57F54E003304EE /* AccountSetClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSearchModel.swift; sourceTree = "<group>"; };
+		448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSearchCell.swift; sourceTree = "<group>"; };
 		448EB2831E5BE6C500CB6183 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientSettingsViewController.swift; sourceTree = "<group>"; };
 		44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSetClientViewController.swift; sourceTree = "<group>"; };
@@ -71,8 +75,8 @@
 		44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsClientViewController.swift; sourceTree = "<group>"; };
 		44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsUsingSearchViewController.swift; sourceTree = "<group>"; };
 		4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsControllerTableViewController.swift; sourceTree = "<group>"; };
-		4837274E1E57E98F00DEB045 /* stylistSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSettings.swift; sourceTree = "<group>"; };
-		483727501E57F75300DEB045 /* stylistBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistBalanceViewController.swift; sourceTree = "<group>"; };
+		4837274E1E57E98F00DEB045 /* stylistSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = stylistSettings.swift; path = ../stylistSettings.swift; sourceTree = "<group>"; };
+		483727501E57F75300DEB045 /* stylistBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = stylistBalanceViewController.swift; path = ../stylistBalanceViewController.swift; sourceTree = "<group>"; };
 		483727521E57F80400DEB045 /* stylistAccountSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistAccountSettingsViewController.swift; sourceTree = "<group>"; };
 		483727541E57F87700DEB045 /* stylistReportaProblemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistReportaProblemViewController.swift; sourceTree = "<group>"; };
 		483727561E57F8D700DEB045 /* stylistTermsAndPoliciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistTermsAndPoliciesViewController.swift; sourceTree = "<group>"; };
@@ -121,15 +125,67 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		448DBAE71E749F6300E68D74 /* Account_Functions */ = {
+			isa = PBXGroup;
+			children = (
+				44F4D7581E3ED2DE002B3FEC /* signUpViewController.swift */,
+				489B5D031E35976E006A49AF /* SignInViewController.swift */,
+			);
+			name = Account_Functions;
+			sourceTree = "<group>";
+		};
+		448DBAE81E749F8300E68D74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44F4D75A1E3ED81F002B3FEC /* HTTPS_model.swift */,
+				448EB2831E5BE6C500CB6183 /* Constants.swift */,
+				4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		448DBAE91E749FC700E68D74 /* Stylist */ = {
+			isa = PBXGroup;
+			children = (
+				44B055D51E47DED1007FB34A /* StylistDashViewController.swift */,
+				4837274E1E57E98F00DEB045 /* stylistSettings.swift */,
+				483727581E57F96300DEB045 /* stylistMenuViewController.swift */,
+				483727561E57F8D700DEB045 /* stylistTermsAndPoliciesViewController.swift */,
+				483727541E57F87700DEB045 /* stylistReportaProblemViewController.swift */,
+				483727521E57F80400DEB045 /* stylistAccountSettingsViewController.swift */,
+				483BC5F01E47EEAA00679FEF /* reviewsStylistViewController.swift */,
+				483BC5EE1E47EE9300679FEF /* portfolioStylistViewController.swift */,
+				483BC5EC1E47EE4200679FEF /* mapStylistViewController.swift */,
+				483BC5EA1E47EE1400679FEF /* appointmentsStylistsViewController.swift */,
+				483BC5E81E47ED6700679FEF /* settingsStylistViewController.swift */,
+				483727501E57F75300DEB045 /* stylistBalanceViewController.swift */,
+			);
+			name = Stylist;
+			sourceTree = "<group>";
+		};
+		448DBAEA1E74A11F00E68D74 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				44F922261E47E9B00048616E /* MapViewController.swift */,
+				44B055D71E47DF1E007FB34A /* ClientDashViewController.swift */,
+				44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */,
+				44AEAB711E57F55C003304EE /* PaymentSetClientViewController.swift */,
+				44AEAB731E57F568003304EE /* TermsClientViewController.swift */,
+				44AEAB751E57F570003304EE /* ReportClientViewController.swift */,
+				44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */,
+				44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */,
+				44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */,
+				44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */,
+				44FA6A591E47F60600867AAE /* AppointmentsClientsViewController.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
 		44BD17C01E344A3A00CF805A = {
 			isa = PBXGroup;
 			children = (
-				483727501E57F75300DEB045 /* stylistBalanceViewController.swift */,
-				4837274E1E57E98F00DEB045 /* stylistSettings.swift */,
-				44F4D75A1E3ED81F002B3FEC /* HTTPS_model.swift */,
-				448EB2831E5BE6C500CB6183 /* Constants.swift */,
-				44F4D7581E3ED2DE002B3FEC /* signUpViewController.swift */,
-				489B5D031E35976E006A49AF /* SignInViewController.swift */,
+				448DBAE81E749F8300E68D74 /* Models */,
+				448DBAE71E749F6300E68D74 /* Account_Functions */,
 				44BD17CB1E344A3A00CF805A /* Clippr */,
 				44BD17CA1E344A3A00CF805A /* Products */,
 				25897815EABA3913A6D2DEE1 /* Frameworks */,
@@ -148,35 +204,17 @@
 		44BD17CB1E344A3A00CF805A /* Clippr */ = {
 			isa = PBXGroup;
 			children = (
-				44B055D71E47DF1E007FB34A /* ClientDashViewController.swift */,
+				448DBAEA1E74A11F00E68D74 /* Client */,
 				48E4579B1E345E240096D19F /* Clipprlogo.png */,
 				48E457991E345DE10096D19F /* Images */,
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
-				483727581E57F96300DEB045 /* stylistMenuViewController.swift */,
-				483727561E57F8D700DEB045 /* stylistTermsAndPoliciesViewController.swift */,
-				483727541E57F87700DEB045 /* stylistReportaProblemViewController.swift */,
-				483727521E57F80400DEB045 /* stylistAccountSettingsViewController.swift */,
-				44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */,
-				44AEAB711E57F55C003304EE /* PaymentSetClientViewController.swift */,
-				44AEAB731E57F568003304EE /* TermsClientViewController.swift */,
-				44AEAB751E57F570003304EE /* ReportClientViewController.swift */,
-				44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */,
+				448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */,
+				448DBAE91E749FC700E68D74 /* Stylist */,
 				4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */,
-				44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */,
-				44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */,
-				44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */,
-				44FA6A591E47F60600867AAE /* AppointmentsClientsViewController.swift */,
-				483BC5F01E47EEAA00679FEF /* reviewsStylistViewController.swift */,
-				483BC5EE1E47EE9300679FEF /* portfolioStylistViewController.swift */,
-				483BC5EC1E47EE4200679FEF /* mapStylistViewController.swift */,
-				483BC5EA1E47EE1400679FEF /* appointmentsStylistsViewController.swift */,
-				483BC5E81E47ED6700679FEF /* settingsStylistViewController.swift */,
 				44F922241E47E9A20048616E /* SettingsViewController.swift */,
-				44F922261E47E9B00048616E /* MapViewController.swift */,
 				44BD17D31E344A3A00CF805A /* Assets.xcassets */,
-				44B055D51E47DED1007FB34A /* StylistDashViewController.swift */,
 				44BD17D51E344A3A00CF805A /* LaunchScreen.storyboard */,
 				44BD17D81E344A3A00CF805A /* Info.plist */,
 			);
@@ -312,6 +350,7 @@
 				44AEAB761E57F570003304EE /* ReportClientViewController.swift in Sources */,
 				4837274F1E57E98F00DEB045 /* stylistSettings.swift in Sources */,
 				44FA6A5C1E47F80C00867AAE /* ProfileClientViewController.swift in Sources */,
+				448DBAEC1E74A55C00E68D74 /* stylistSearchCell.swift in Sources */,
 				4837274D1E57E0DB00DEB045 /* settingsControllerTableViewController.swift in Sources */,
 				44FA6A601E47F9E000867AAE /* ClientsUsingSearchViewController.swift in Sources */,
 				483BC5EF1E47EE9300679FEF /* portfolioStylistViewController.swift in Sources */,
@@ -326,6 +365,7 @@
 				44F922271E47E9B00048616E /* MapViewController.swift in Sources */,
 				44B055D61E47DED1007FB34A /* StylistDashViewController.swift in Sources */,
 				483727511E57F75300DEB045 /* stylistBalanceViewController.swift in Sources */,
+				4414E7041E74A65C00EC98E1 /* stylistSearchModel.swift in Sources */,
 				44B055D81E47DF1E007FB34A /* ClientDashViewController.swift in Sources */,
 				44F4D7591E3ED2DE002B3FEC /* signUpViewController.swift in Sources */,
 				44AEAB6E1E57F3C1003304EE /* ClientSettingsViewController.swift in Sources */,
