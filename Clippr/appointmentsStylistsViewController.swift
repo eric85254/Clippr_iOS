@@ -16,6 +16,7 @@ import UIKit
 class appointmentsStylistsViewController: UIViewController, UITextViewDelegate {
    
     
+   
     var appointmentsScrollView: UIScrollView!
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
         switch  stylistAppointments.selectedSegmentIndex {

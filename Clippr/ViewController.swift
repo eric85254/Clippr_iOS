@@ -29,9 +29,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.signIn.layer.borderWidth = 2
+        /*self.signIn.layer.borderWidth = 2
         self.signIn.layer.borderColor = UIColor.blue.cgColor
         self.signUP.layer.borderColor = UIColor.blue.cgColor
+        */
         //print(test[1]!.address)
         //print(test[1]!.time)
         

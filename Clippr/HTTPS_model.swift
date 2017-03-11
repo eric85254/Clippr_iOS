@@ -55,6 +55,7 @@ class HTTPS_model
         var lName: String?
         var email: String?
         var phone: String?
+        var password: String?
         var isStylist: String?
         var pic: String?
         
@@ -78,8 +79,9 @@ class HTTPS_model
                 "last_name" ~~> self.lName,
                 "email" ~~> self.email,
                 "phonenumber" ~~> self.phone,
+                "password" ~~> self.password,
                 "is_stylist" ~~> self.isStylist,
-                "profile_picture" ~~> "https://clipprphotos.s3.amazonaws.com:443/defaults/default_user.png?Signature=tKSDthudC2BOHbJcpV4macO2PmY%3D&Expires=1487733630&AWSAccessKeyId=AKIAINM4DXIZAY2HWJBA"
+                "profile_picture" ~~> self.pic
                 ])
         }
     }
@@ -109,20 +111,32 @@ class HTTPS_model
     {
         instance.goToStylistDash()
     }
-    func makePostSignUP(firstName: String, lastName: String, email: String, phonenumber: String, isStylist: String)
+    func makePostSignUP(firstName: String, lastName: String, email: String, phonenumber: String, password: String, isStylist: String)
     {
-        let parameters: Parameters = [
+        var RepoMakerIN = RepoMaker()
+        RepoMakerIN.fName = firstName
+        RepoMakerIN.lName = lastName
+        RepoMakerIN.email = email
+        RepoMakerIN.phone = phonenumber
+        RepoMakerIN.password = password
+        RepoMakerIN.isStylist = isStylist
+        RepoMakerIN.pic = "https://clipprphotos.s3.amazonaws.com:443/defaults/default_user.png?Signature=tKSDthudC2BOHbJcpV4macO2PmY%3D&Expires=1487733630&AWSAccessKeyId=AKIAINM4DXIZAY2HWJBA"
+        
+        
+        /*let parameters: Parameters = [
             "first_name":firstName,
             "last_name":lastName,
             "email":email,
             "phonenumber":phonenumber,
             "is_stylist":isStylist,
             "profile_picture": "https://clipprphotos.s3.amazonaws.com:443/defaults/default_user.png?Signature=tKSDthudC2BOHbJcpV4macO2PmY%3D&Expires=1487733630&AWSAccessKeyId=AKIAINM4DXIZAY2HWJBA"
-        ]
+        ]*/
+        
+        let newJson2 = RepoMakerIN.toJSON()
         // Do a logout just to be sure
         
         doLogout()
-        Alamofire.request(currentURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).validate(contentType: ["application/json"]).responseJSON { response in
+        Alamofire.request(currentURL, method: .post, parameters: newJson2!, encoding: JSONEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success:
                 print("Validation Successful")

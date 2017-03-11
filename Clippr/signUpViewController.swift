@@ -46,7 +46,7 @@ class signUpViewController: UIViewController {
     }
     
     @IBAction func attemptSignIn(_ sender: UIButton) {
-            model.makePostSignUP(firstName: self.fName.text!, lastName: self.lName.text!, email: self.email.text!, phonenumber: self.phoneNum.text!, isStylist: yesOrNO)
+            model.makePostSignUP(firstName: self.fName.text!, lastName: self.lName.text!, email: self.email.text!, phonenumber: self.phoneNum.text!, password: self.password.text!, isStylist: yesOrNO)
     }
 
     /*

@@ -16,7 +16,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
     
-    @IBOutlet weak var Try: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,10 +98,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    
-    @IBAction func tryTest(_ sender: UIButton) {
-        print("TRY TEST")
-        print(model.download())
-    }
+  
     
 }
