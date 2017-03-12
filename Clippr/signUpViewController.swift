@@ -20,7 +20,9 @@ class signUpViewController: UIViewController {
     @IBOutlet weak var SignUp: UIButton!
     
     var yesOrNO : String = ""
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     let model = HTTPS_model()
     override func viewDidLoad() {
         super.viewDidLoad()
