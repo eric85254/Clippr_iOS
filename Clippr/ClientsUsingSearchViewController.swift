@@ -26,6 +26,7 @@ class ClientsUsingSearchViewController: UIViewController {
     }
     
     @IBAction func searchStylists(_ sender: Any) {
+        add.stylists.removeAll()
         add.getStylistList(location: self.ZipEn.text, instance: self)
         //model.getStylistList(location: self.ZipEn.text, instance: self)
         print("Made the get call")

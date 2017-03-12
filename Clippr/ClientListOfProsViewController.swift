@@ -10,11 +10,14 @@ import UIKit
 
 class ClientListOfProsViewController: UIViewController {
     
+    @IBOutlet weak var stylTable: UITableView!
     var name: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         print(add.stylists.count)
         // Do any additional setup after loading the view.
+        self.title = "List of Stylists"
+       stylTable.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
