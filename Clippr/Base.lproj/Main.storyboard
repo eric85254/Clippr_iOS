@@ -402,19 +402,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stylist" rowHeight="58" id="Rls-sS-j42" customClass="stylistSearchCell" customModule="Clippr" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="stylist" rowHeight="58" id="Rls-sS-j42" customClass="stylistSearchCell" customModule="Clippr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rls-sS-j42" id="SB6-BK-eAZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-eh-tM6">
-                                                    <rect key="frame" x="8" y="4" width="112" height="49"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="47A-M3-Xyd">
+                                                    <rect key="frame" x="128" y="18" width="89" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="47A-M3-Xyd">
-                                                    <rect key="frame" x="149" y="18" width="201" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uVp-kj-aqd">
+                                                    <rect key="frame" x="225" y="18" width="100" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -423,11 +426,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="stylistImage" destination="SB6-BK-eAZ" id="K7C-eu-f74"/>
-                                            <outlet property="stylistName" destination="47A-M3-Xyd" id="OK7-FG-ijg"/>
+                                            <outlet property="fName" destination="47A-M3-Xyd" id="dMc-4R-u1l"/>
+                                            <outlet property="lName" destination="uVp-kj-aqd" id="3eT-bn-ykA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lDh-rM-tPP" id="NM1-0U-cID"/>
+                                    <outlet property="delegate" destination="lDh-rM-tPP" id="Mgh-F9-2QX"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -435,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jm7-lJ-cf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="3529"/>
+            <point key="canvasLocation" x="284" y="3528.4857571214397"/>
         </scene>
         <!--Map-->
         <scene sceneID="aXT-kL-X2U">
@@ -590,7 +597,7 @@
         <scene sceneID="ZWK-s6-RNk">
             <objects>
                 <collectionViewController id="nsj-gq-9tm" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="91E-W3-vBP">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="91E-W3-vBP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1017,7 +1024,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e1e-gd-JBg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" selectedImage="settings_btn" id="QfZ-Nv-GCB"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ctr-oB-f8Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ctr-oB-f8Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1181,7 +1188,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqn-d6-0un" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_btn" id="0I0-CL-RCf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2Zx-QQ-seC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Zx-QQ-seC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1307,7 +1314,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnd-vZ-9pg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="V4C-fO-bU6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V4C-fO-bU6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1326,7 +1333,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S6l-KT-QrD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stylist Search" image="searchbtn" id="Iln-CT-j3y"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="INa-C7-Gxh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="INa-C7-Gxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

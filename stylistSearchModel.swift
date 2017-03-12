@@ -65,7 +65,7 @@ class stylistSearchModel
                 {
                     var tempStore  = amount as! [String: String]
                     print(tempStore["first_name"]!)
-                    var newStylist = record(u: tempStore["url"]!, fn: tempStore["first_name"]!, ln: tempStore["last_name"]! , p: tempStore["profile_picture"]!)
+                    var newStylist = record(u: tempStore["url"]!, fn: tempStore["first_name"]!, ln: tempStore["last_name"]! , p: "ASK KAT about")
                     self.stylists.append(newStylist)
                 }
                 

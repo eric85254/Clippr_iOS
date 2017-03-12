@@ -22,5 +22,6 @@ let model = HTTPS_model()
 //It's not a contant but oh well
 var ConUsername = ""
 var isLoggedIn = false
+var add: stylistSearchModel = stylistSearchModel()
 
 

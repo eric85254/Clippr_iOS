@@ -9,11 +9,11 @@
 import UIKit
 
 class ClientListOfProsViewController: UIViewController {
-    var add: stylistSearchModel = stylistSearchModel()
+    
     var name: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(add.stylists.count)
         // Do any additional setup after loading the view.
     }
 
@@ -29,10 +29,11 @@ class ClientListOfProsViewController: UIViewController {
     // This datasource method will create each cell of the table
     func tableView(_ tableView: UITableView,cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
-        
-        cell.textLabel?.text = add.stylists[indexPath.row].getLName();
-        cell.detailTextLabel?.textAlignment = .right
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stylist", for: indexPath) as! stylistSearchCell
+        cell.fName.text = add.stylists[indexPath.row].getFName();
+        cell.lName.text = add.stylists[indexPath.row].getLName();
+        //cell.textLabel?.text = add.stylists[indexPath.row].getLName();
+        //cell.detailTextLabel?.textAlignment = .right
         
         
         //let cell_Image = UIImage(named: add.stylists[indexPath.row].getImage())

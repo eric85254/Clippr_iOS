@@ -10,7 +10,7 @@ import UIKit
 
 class ClientsUsingSearchViewController: UIViewController {
 
-    let model = stylistSearchModel()
+    //let model = stylistSearchModel()
     @IBOutlet weak var foundStylists: UITableView!
     @IBOutlet weak var ZipEn: UITextField!
     @IBOutlet weak var FindBut: UIButton!
@@ -26,7 +26,8 @@ class ClientsUsingSearchViewController: UIViewController {
     }
     
     @IBAction func searchStylists(_ sender: Any) {
-        model.getStylistList(location: self.ZipEn.text, instance: self)
+        add.getStylistList(location: self.ZipEn.text, instance: self)
+        //model.getStylistList(location: self.ZipEn.text, instance: self)
         print("Made the get call")
         
         
