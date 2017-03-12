@@ -26,9 +26,18 @@ class ClientsUsingSearchViewController: UIViewController {
     }
     
     @IBAction func searchStylists(_ sender: Any) {
-        model.getStylistList(location: "1")
+        model.getStylistList(location: self.ZipEn.text, instance: self)
         print("Made the get call")
+        
+        
     }
+
+    func goToList()
+    {
+        
+        performSegue(withIdentifier: "search", sender: self)
+    }
+
 
     /*
     // MARK: - Navigation

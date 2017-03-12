@@ -329,7 +329,7 @@
             </objects>
             <point key="canvasLocation" x="-3255" y="2745"/>
         </scene>
-        <!--Clients Using Search View Controller-->
+        <!--Stylist Search-->
         <scene sceneID="bKE-Z1-c1a">
             <objects>
                 <viewController id="1Pf-l4-KD6" customClass="ClientsUsingSearchViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
@@ -363,15 +363,42 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfa-Tj-tQ1">
-                                <rect key="frame" x="138" y="134" width="156" height="30"/>
+                                <rect key="frame" x="109" y="580" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find A Stylist Near You"/>
                                 <connections>
                                     <action selector="searchStylists:" destination="1Pf-l4-KD6" eventType="touchUpInside" id="0AW-Pb-xU0"/>
                                 </connections>
                             </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stylist Search" id="6Xe-zs-gx8"/>
+                    <connections>
+                        <outlet property="FindBut" destination="rfa-Tj-tQ1" id="rBc-85-SE8"/>
+                        <outlet property="ZipEn" destination="ocX-Ra-ZsA" id="VpT-At-BS2"/>
+                        <outlet property="foundStylists" destination="BAu-kN-9n3" id="1Tr-hL-Lbp"/>
+                        <segue destination="lDh-rM-tPP" kind="show" identifier="search" id="HhZ-xa-oQp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuA-8c-Mj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="2744.9775112443781"/>
+        </scene>
+        <!--Client List Of Pros View Controller-->
+        <scene sceneID="Oc5-7a-uDE">
+            <objects>
+                <viewController id="lDh-rM-tPP" customClass="ClientListOfProsViewController" customModule="Clippr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Vg-fl-xa1"/>
+                        <viewControllerLayoutGuide type="bottom" id="lDQ-JB-M11"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQU-tx-u1e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-kN-9n3">
-                                <rect key="frame" x="0.0" y="166" width="375" height="452"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -403,18 +430,12 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6Xe-zs-gx8"/>
-                    <connections>
-                        <outlet property="FindBut" destination="rfa-Tj-tQ1" id="rBc-85-SE8"/>
-                        <outlet property="ZipEn" destination="ocX-Ra-ZsA" id="VpT-At-BS2"/>
-                        <outlet property="foundStylists" destination="BAu-kN-9n3" id="1Tr-hL-Lbp"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuA-8c-Mj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jm7-lJ-cf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="2744.9775112443781"/>
+            <point key="canvasLocation" x="284" y="3529"/>
         </scene>
         <!--Map-->
         <scene sceneID="aXT-kL-X2U">
