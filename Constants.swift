@@ -25,3 +25,4 @@ var isLoggedIn = false
 var add: stylistSearchModel = stylistSearchModel()
 
 
+

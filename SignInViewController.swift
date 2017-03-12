@@ -15,7 +15,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     override func viewDidLoad() {

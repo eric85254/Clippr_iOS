@@ -12,9 +12,11 @@ class stylistSearchCell: UITableViewCell {
     
    
     
-    @IBOutlet weak var fName: UILabel!
+ 
     
-    @IBOutlet weak var lName: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+  
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

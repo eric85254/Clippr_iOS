@@ -30,8 +30,15 @@ class ClientListOfProsViewController: UIViewController {
     func tableView(_ tableView: UITableView,cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "stylist", for: indexPath) as! stylistSearchCell
-        cell.fName.text = add.stylists[indexPath.row].getFName();
-        cell.lName.text = add.stylists[indexPath.row].getLName();
+        
+        let temp1 = add.stylists[indexPath.row].getFName();
+        let temp2 = add.stylists[indexPath.row].getLName();
+        var final = temp1
+        final += " "
+        final += temp2
+        cell.nameLabel.text = final
+        //cell.lName.text = add.stylists[indexPath.row].getLName();
+        cell.layer.borderWidth = 1
         //cell.textLabel?.text = add.stylists[indexPath.row].getLName();
         //cell.detailTextLabel?.textAlignment = .right
         
