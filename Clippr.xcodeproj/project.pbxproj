@@ -32,6 +32,7 @@
 		44FA6A5C1E47F80C00867AAE /* ProfileClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */; };
 		44FA6A5E1E47F82000867AAE /* ReviewsClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */; };
 		44FA6A601E47F9E000867AAE /* ClientsUsingSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */; };
+		44FE6B471E77225700FF010A /* ClientViewStylistProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE6B461E77225700FF010A /* ClientViewStylistProfileViewController.swift */; };
 		4837274D1E57E0DB00DEB045 /* settingsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */; };
 		4837274F1E57E98F00DEB045 /* stylistSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837274E1E57E98F00DEB045 /* stylistSettings.swift */; };
 		483727511E57F75300DEB045 /* stylistBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483727501E57F75300DEB045 /* stylistBalanceViewController.swift */; };
@@ -76,6 +77,7 @@
 		44FA6A5B1E47F80C00867AAE /* ProfileClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClientViewController.swift; sourceTree = "<group>"; };
 		44FA6A5D1E47F82000867AAE /* ReviewsClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsClientViewController.swift; sourceTree = "<group>"; };
 		44FA6A5F1E47F9E000867AAE /* ClientsUsingSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsUsingSearchViewController.swift; sourceTree = "<group>"; };
+		44FE6B461E77225700FF010A /* ClientViewStylistProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewStylistProfileViewController.swift; sourceTree = "<group>"; };
 		4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsControllerTableViewController.swift; sourceTree = "<group>"; };
 		4837274E1E57E98F00DEB045 /* stylistSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = stylistSettings.swift; path = ../stylistSettings.swift; sourceTree = "<group>"; };
 		483727501E57F75300DEB045 /* stylistBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = stylistBalanceViewController.swift; path = ../stylistBalanceViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,9 @@
 		448DBAEA1E74A11F00E68D74 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				44FE6B461E77225700FF010A /* ClientViewStylistProfileViewController.swift */,
+				44F641301E74EBCF0087740B /* ClientListOfProsViewController.swift */,
+				448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */,
 				44F922261E47E9B00048616E /* MapViewController.swift */,
 				44B055D71E47DF1E007FB34A /* ClientDashViewController.swift */,
 				44AEAB6F1E57F54E003304EE /* AccountSetClientViewController.swift */,
@@ -212,8 +217,6 @@
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
-				44F641301E74EBCF0087740B /* ClientListOfProsViewController.swift */,
-				448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */,
 				448DBAE91E749FC700E68D74 /* Stylist */,
 				4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */,
 				44F922241E47E9A20048616E /* SettingsViewController.swift */,
@@ -362,6 +365,7 @@
 				483BC5ED1E47EE4200679FEF /* mapStylistViewController.swift in Sources */,
 				448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */,
 				44F4D75B1E3ED81F002B3FEC /* HTTPS_model.swift in Sources */,
+				44FE6B471E77225700FF010A /* ClientViewStylistProfileViewController.swift in Sources */,
 				483BC5E91E47ED6700679FEF /* settingsStylistViewController.swift in Sources */,
 				44AEAB701E57F54E003304EE /* AccountSetClientViewController.swift in Sources */,
 				44BD17CD1E344A3A00CF805A /* AppDelegate.swift in Sources */,
