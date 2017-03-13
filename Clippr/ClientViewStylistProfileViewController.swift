@@ -10,9 +10,10 @@ import UIKit
 
 class ClientViewStylistProfileViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -30,8 +31,13 @@ class ClientViewStylistProfileViewController: UIViewController {
         var list = ["Stylist Menu", "Stylist Portfolio"]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Menu", for: indexPath)
+        
+        //cell.type.text = list[indexPath.row]
+       // cell.type.text = "test"
         cell.textLabel?.text = list[indexPath.row]
-            
+        cell.textLabel?.textAlignment = .center
+        //cell.detailTextLabel?.textAlignment = .right
+
         return cell
         
         
