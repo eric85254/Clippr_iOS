@@ -10,10 +10,16 @@ import UIKit
 
 class ClientViewStylistProfileViewController: UIViewController {
 
+    @IBOutlet weak var menuBut: UIButton!
+    @IBOutlet weak var portBut: UIButton!
     
+    @IBOutlet weak var stylName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        menuBut.layer.borderWidth = 1
+        menuBut.layer.borderColor = UIColor.blue.cgColor
+        portBut.layer.borderWidth = 1
+        portBut.layer.borderColor = UIColor.blue.cgColor
         // Do any additional setup after loading the view.
     }
 

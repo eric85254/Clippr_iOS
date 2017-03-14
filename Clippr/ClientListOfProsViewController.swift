@@ -83,6 +83,24 @@ class ClientListOfProsViewController: UIViewController {
         return r
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selectedIndex: IndexPath = self.stylTable.indexPath(for: sender as! UITableViewCell)!
+        
+       // self.name = add.stylists[selectedIndex.row].getName();
+        let temp3 = add.stylists[selectedIndex.row].getFName();
+        let temp4 = add.stylists[selectedIndex.row].getLName();
+        var final = temp3
+        final += " "
+        final += temp4
+        
+        self.name = final
+        if(segue.identifier == "details"){
+            if let StylviewController: ClientViewStylistProfileViewController = segue.destination as? ClientViewStylistProfileViewController {
+               // StylviewController.stylName.text = name
+            }
+        }
+    }
+
     /*
     // MARK: - Navigation
 

@@ -425,7 +425,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="47A-M3-Xyd" id="nM3-Zc-wOu"/>
                                             <outlet property="ratingLabel" destination="M6Y-xe-FhU" id="GAV-P6-Qah"/>
-                                            <segue destination="JKv-U4-tOK" kind="show" id="ZW1-Ip-4kX"/>
+                                            <segue destination="JKv-U4-tOK" kind="show" identifier="details" id="ZW1-Ip-4kX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -483,13 +483,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYq-DK-al9">
+                                <rect key="frame" x="16" y="379" width="343" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stylist Menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-fA-27Q">
+                                <rect key="frame" x="16" y="517" width="343" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stylist Portfolio"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="menuBut" destination="zYq-DK-al9" id="9gN-yu-V95"/>
+                        <outlet property="portBut" destination="AAd-fA-27Q" id="abb-wb-WC1"/>
+                        <outlet property="stylName" destination="PGQ-0t-ksa" id="u2Z-m2-rQ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaH-Sz-OdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157.5999999999999" y="3527.5862068965521"/>
+            <point key="canvasLocation" x="1046" y="3528"/>
         </scene>
         <!--Map-->
         <scene sceneID="aXT-kL-X2U">

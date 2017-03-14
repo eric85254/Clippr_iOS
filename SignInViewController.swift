@@ -10,6 +10,7 @@ import UIKit
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
     
+    var name: String = ""
     
     @IBOutlet weak var invalidLogin: UILabel!
     @IBOutlet weak var signIn: UIButton!
@@ -99,6 +100,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }*/
         
     }
+    
     
   
     
