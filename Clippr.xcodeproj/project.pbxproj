@@ -46,6 +46,7 @@
 		483BC5EF1E47EE9300679FEF /* portfolioStylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BC5EE1E47EE9300679FEF /* portfolioStylistViewController.swift */; };
 		483BC5F11E47EEAA00679FEF /* reviewsStylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BC5F01E47EEAA00679FEF /* reviewsStylistViewController.swift */; };
 		489B5D041E35976E006A49AF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B5D031E35976E006A49AF /* SignInViewController.swift */; };
+		48A2484B1E7CDDBD00F7D8DA /* newStylistPortfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A2484A1E7CDDBD00F7D8DA /* newStylistPortfolio.swift */; };
 		48E4579A1E345DE10096D19F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 48E457991E345DE10096D19F /* Images */; };
 		48E4579C1E345E240096D19F /* Clipprlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E4579B1E345E240096D19F /* Clipprlogo.png */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		483BC5EE1E47EE9300679FEF /* portfolioStylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = portfolioStylistViewController.swift; sourceTree = "<group>"; };
 		483BC5F01E47EEAA00679FEF /* reviewsStylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reviewsStylistViewController.swift; sourceTree = "<group>"; };
 		489B5D031E35976E006A49AF /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		48A2484A1E7CDDBD00F7D8DA /* newStylistPortfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newStylistPortfolio.swift; sourceTree = "<group>"; };
 		48E457991E345DE10096D19F /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		48E4579B1E345E240096D19F /* Clipprlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Clipprlogo.png; path = Images/Clipprlogo.png; sourceTree = "<group>"; };
 		794975ADCB4D95E9F1CE6CFE /* Pods_Clippr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clippr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 		448DBAE91E749FC700E68D74 /* Stylist */ = {
 			isa = PBXGroup;
 			children = (
+				48A2484A1E7CDDBD00F7D8DA /* newStylistPortfolio.swift */,
 				44B055D51E47DED1007FB34A /* StylistDashViewController.swift */,
 				4837274E1E57E98F00DEB045 /* stylistSettings.swift */,
 				483727581E57F96300DEB045 /* stylistMenuViewController.swift */,
@@ -372,6 +375,7 @@
 				44AEAB721E57F55C003304EE /* PaymentSetClientViewController.swift in Sources */,
 				44F922271E47E9B00048616E /* MapViewController.swift in Sources */,
 				44B055D61E47DED1007FB34A /* StylistDashViewController.swift in Sources */,
+				48A2484B1E7CDDBD00F7D8DA /* newStylistPortfolio.swift in Sources */,
 				483727511E57F75300DEB045 /* stylistBalanceViewController.swift in Sources */,
 				4414E7041E74A65C00EC98E1 /* stylistSearchModel.swift in Sources */,
 				44B055D81E47DF1E007FB34A /* ClientDashViewController.swift in Sources */,
