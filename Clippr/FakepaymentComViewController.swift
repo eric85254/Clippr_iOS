@@ -10,9 +10,12 @@ import UIKit
 
 class FakepaymentComViewController: UIViewController {
 
+    @IBOutlet weak var comment: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Payment Complete!"
+        comment.layer.borderWidth = 1
+        comment.layer.borderColor = UIColor.blue.cgColor
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +24,7 @@ class FakepaymentComViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

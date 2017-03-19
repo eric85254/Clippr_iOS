@@ -10,6 +10,9 @@
 		087172EB1DF6678D8F1A0881 /* Pods_Clippr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794975ADCB4D95E9F1CE6CFE /* Pods_Clippr.framework */; };
 		4414E7041E74A65C00EC98E1 /* stylistSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */; };
 		447510CA1E7E318600F97451 /* FakepaymentComViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447510C91E7E318600F97451 /* FakepaymentComViewController.swift */; };
+		447510CE1E7E352600F97451 /* 25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 447510CB1E7E352600F97451 /* 25.jpg */; };
+		447510CF1E7E352600F97451 /* 23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 447510CC1E7E352600F97451 /* 23.jpg */; };
+		447510D01E7E352600F97451 /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 447510CD1E7E352600F97451 /* 20.jpg */; };
 		448DBAEC1E74A55C00E68D74 /* stylistSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */; };
 		448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EB2831E5BE6C500CB6183 /* Constants.swift */; };
 		44AEAB6E1E57F3C1003304EE /* ClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */; };
@@ -66,6 +69,9 @@
 /* Begin PBXFileReference section */
 		4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSearchModel.swift; sourceTree = "<group>"; };
 		447510C91E7E318600F97451 /* FakepaymentComViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakepaymentComViewController.swift; sourceTree = "<group>"; };
+		447510CB1E7E352600F97451 /* 25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 25.jpg; sourceTree = "<group>"; };
+		447510CC1E7E352600F97451 /* 23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 23.jpg; sourceTree = "<group>"; };
+		447510CD1E7E352600F97451 /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
 		448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSearchCell.swift; sourceTree = "<group>"; };
 		448EB2831E5BE6C500CB6183 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientSettingsViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +255,9 @@
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
 				447510C91E7E318600F97451 /* FakepaymentComViewController.swift */,
+				447510CB1E7E352600F97451 /* 25.jpg */,
+				447510CC1E7E352600F97451 /* 23.jpg */,
+				447510CD1E7E352600F97451 /* 20.jpg */,
 				44D976B11E7E27EA00B90012 /* FakeTransacViewController.swift */,
 				44D976AF1E7E23BF00B90012 /* FakePortViewController.swift */,
 				44D9769E1E7E15E400B90012 /* DebugViewController.swift */,
@@ -336,11 +345,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447510CF1E7E352600F97451 /* 23.jpg in Resources */,
+				447510CE1E7E352600F97451 /* 25.jpg in Resources */,
 				44D976A81E7E1D3A00B90012 /* 4.jpg in Resources */,
 				48E4579A1E345DE10096D19F /* Images in Resources */,
 				44BD17D71E344A3A00CF805A /* LaunchScreen.storyboard in Resources */,
 				44BD17D41E344A3A00CF805A /* Assets.xcassets in Resources */,
 				44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */,
+				447510D01E7E352600F97451 /* 20.jpg in Resources */,
 				44D976B41E7E2B2F00B90012 /* Paypal.png in Resources */,
 				44D976AE1E7E229D00B90012 /* aa.jpg in Resources */,
 				44D976A91E7E1D3A00B90012 /* 3.jpg in Resources */,
