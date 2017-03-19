@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		087172EB1DF6678D8F1A0881 /* Pods_Clippr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794975ADCB4D95E9F1CE6CFE /* Pods_Clippr.framework */; };
 		4414E7041E74A65C00EC98E1 /* stylistSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */; };
+		447510CA1E7E318600F97451 /* FakepaymentComViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447510C91E7E318600F97451 /* FakepaymentComViewController.swift */; };
 		448DBAEC1E74A55C00E68D74 /* stylistSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */; };
 		448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EB2831E5BE6C500CB6183 /* Constants.swift */; };
 		44AEAB6E1E57F3C1003304EE /* ClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */; };
@@ -30,6 +31,10 @@
 		44D976A91E7E1D3A00B90012 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D976A51E7E1D3A00B90012 /* 3.jpg */; };
 		44D976AA1E7E1D3A00B90012 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D976A61E7E1D3A00B90012 /* 2.jpg */; };
 		44D976AB1E7E1D3A00B90012 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D976A71E7E1D3A00B90012 /* 1.jpg */; };
+		44D976AE1E7E229D00B90012 /* aa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D976AD1E7E229D00B90012 /* aa.jpg */; };
+		44D976B01E7E23BF00B90012 /* FakePortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D976AF1E7E23BF00B90012 /* FakePortViewController.swift */; };
+		44D976B21E7E27EA00B90012 /* FakeTransacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D976B11E7E27EA00B90012 /* FakeTransacViewController.swift */; };
+		44D976B41E7E2B2F00B90012 /* Paypal.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D976B31E7E2B2F00B90012 /* Paypal.png */; };
 		44F4D7591E3ED2DE002B3FEC /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D7581E3ED2DE002B3FEC /* signUpViewController.swift */; };
 		44F4D75B1E3ED81F002B3FEC /* HTTPS_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4D75A1E3ED81F002B3FEC /* HTTPS_model.swift */; };
 		44F641311E74EBCF0087740B /* ClientListOfProsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F641301E74EBCF0087740B /* ClientListOfProsViewController.swift */; };
@@ -60,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		4414E7031E74A65C00EC98E1 /* stylistSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSearchModel.swift; sourceTree = "<group>"; };
+		447510C91E7E318600F97451 /* FakepaymentComViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakepaymentComViewController.swift; sourceTree = "<group>"; };
 		448DBAEB1E74A55C00E68D74 /* stylistSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stylistSearchCell.swift; sourceTree = "<group>"; };
 		448EB2831E5BE6C500CB6183 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44AEAB6D1E57F3C1003304EE /* ClientSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientSettingsViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,10 @@
 		44D976A51E7E1D3A00B90012 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		44D976A61E7E1D3A00B90012 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		44D976A71E7E1D3A00B90012 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		44D976AD1E7E229D00B90012 /* aa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aa.jpg; sourceTree = "<group>"; };
+		44D976AF1E7E23BF00B90012 /* FakePortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePortViewController.swift; sourceTree = "<group>"; };
+		44D976B11E7E27EA00B90012 /* FakeTransacViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeTransacViewController.swift; sourceTree = "<group>"; };
+		44D976B31E7E2B2F00B90012 /* Paypal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paypal.png; sourceTree = "<group>"; };
 		44F4D7581E3ED2DE002B3FEC /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = signUpViewController.swift; path = Clippr/signUpViewController.swift; sourceTree = "<group>"; };
 		44F4D75A1E3ED81F002B3FEC /* HTTPS_model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPS_model.swift; path = Clippr/HTTPS_model.swift; sourceTree = "<group>"; };
 		44F641301E74EBCF0087740B /* ClientListOfProsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientListOfProsViewController.swift; sourceTree = "<group>"; };
@@ -234,12 +244,17 @@
 				48E4579B1E345E240096D19F /* Clipprlogo.png */,
 				48E457991E345DE10096D19F /* Images */,
 				44BD17CC1E344A3A00CF805A /* AppDelegate.swift */,
+				44D976B31E7E2B2F00B90012 /* Paypal.png */,
 				44D976AC1E7E1D4400B90012 /* Pictures */,
 				44BD17CE1E344A3A00CF805A /* ViewController.swift */,
 				44BD17D01E344A3A00CF805A /* Main.storyboard */,
+				447510C91E7E318600F97451 /* FakepaymentComViewController.swift */,
+				44D976B11E7E27EA00B90012 /* FakeTransacViewController.swift */,
+				44D976AF1E7E23BF00B90012 /* FakePortViewController.swift */,
 				44D9769E1E7E15E400B90012 /* DebugViewController.swift */,
 				448DBAE91E749FC700E68D74 /* Stylist */,
 				4837274C1E57E0DB00DEB045 /* settingsControllerTableViewController.swift */,
+				44D976AD1E7E229D00B90012 /* aa.jpg */,
 				44F922241E47E9A20048616E /* SettingsViewController.swift */,
 				44BD17D31E344A3A00CF805A /* Assets.xcassets */,
 				44BD17D51E344A3A00CF805A /* LaunchScreen.storyboard */,
@@ -326,6 +341,8 @@
 				44BD17D71E344A3A00CF805A /* LaunchScreen.storyboard in Resources */,
 				44BD17D41E344A3A00CF805A /* Assets.xcassets in Resources */,
 				44BD17D21E344A3A00CF805A /* Main.storyboard in Resources */,
+				44D976B41E7E2B2F00B90012 /* Paypal.png in Resources */,
+				44D976AE1E7E229D00B90012 /* aa.jpg in Resources */,
 				44D976A91E7E1D3A00B90012 /* 3.jpg in Resources */,
 				44D976AB1E7E1D3A00B90012 /* 1.jpg in Resources */,
 				44D976AA1E7E1D3A00B90012 /* 2.jpg in Resources */,
@@ -398,9 +415,11 @@
 				44D9769F1E7E15E400B90012 /* DebugViewController.swift in Sources */,
 				44FA6A601E47F9E000867AAE /* ClientsUsingSearchViewController.swift in Sources */,
 				483BC5EF1E47EE9300679FEF /* portfolioStylistViewController.swift in Sources */,
+				447510CA1E7E318600F97451 /* FakepaymentComViewController.swift in Sources */,
 				44BD17CF1E344A3A00CF805A /* ViewController.swift in Sources */,
 				483BC5ED1E47EE4200679FEF /* mapStylistViewController.swift in Sources */,
 				448EB2841E5BE6C500CB6183 /* Constants.swift in Sources */,
+				44D976B21E7E27EA00B90012 /* FakeTransacViewController.swift in Sources */,
 				44F4D75B1E3ED81F002B3FEC /* HTTPS_model.swift in Sources */,
 				44FE6B471E77225700FF010A /* ClientViewStylistProfileViewController.swift in Sources */,
 				483BC5E91E47ED6700679FEF /* settingsStylistViewController.swift in Sources */,
@@ -414,6 +433,7 @@
 				483727511E57F75300DEB045 /* stylistBalanceViewController.swift in Sources */,
 				4414E7041E74A65C00EC98E1 /* stylistSearchModel.swift in Sources */,
 				44B055D81E47DF1E007FB34A /* ClientDashViewController.swift in Sources */,
+				44D976B01E7E23BF00B90012 /* FakePortViewController.swift in Sources */,
 				44F4D7591E3ED2DE002B3FEC /* signUpViewController.swift in Sources */,
 				44AEAB6E1E57F3C1003304EE /* ClientSettingsViewController.swift in Sources */,
 				489B5D041E35976E006A49AF /* SignInViewController.swift in Sources */,
